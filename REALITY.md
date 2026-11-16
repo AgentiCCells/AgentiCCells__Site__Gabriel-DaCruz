@@ -9,6 +9,8 @@ A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacru
 - Figures are inline SVG in `src/_inc/`, pulled into pages by `scripts/build.mjs` (`<!--#inc name -->`): three frames of the video, the decay and delay envelope, the Live Multicam setup, the film concert idea. Drawn for this site, CC BY 4.0; no third-party images.
 - Use with AI: `src/llms.txt`, `src/index.md` (the master copy of the facts), `src/agents/index.html` (for people) and `src/agents/{visitor,gabriel,editor,questions}.md`.
 - Two more designs with the same facts: "The Score" (`src/d/score/`) and "The Signal Chain" (`src/d/signal/`), listed in `src/designs.json`, switched from a bar at the top of each.
+- Gabriel's own photos in `src/assets/photos/` (supplied by Dinis Cruz, 2026-11-16; metadata stripped): studio with bass (hero, square crop), studio desk, portrait, the cover of COR. Rights stay Gabriel's; the site says ask before reuse.
+- New facts, sourced: the album COR, Live at café Império ("music composed and conducted by Gabriel DaCruz", from its cover); his SoundCloud (two 2023 themes; the Media playlist of film and TV cues, 2011 to 2014), read 2026-11-16.
 - Portuguese page (`src/pt/index.html`) in "The Studio" design, with Portuguese copies of the figures and lists (`src/_inc/*.pt.*`, made by `scripts/pt-fragments.py`). The other designs and the agent files are English only.
 
 ## Not yet (proposed and approved by Dinis Cruz, 2026-11-16 ~21:40 UTC, relayed by cells@AgentiCCells.dinis)
@@ -18,7 +20,7 @@ A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacru
 ## Waiting for Gabriel (through Dinis)
 
 - A direct link to the Separate Ways video (the site links his YouTube channel meanwhile).
-- His own photos (four empty slots on the home page).
+- Whether the guitar lesson photo (Gabriel with a second, young person) may be published: held back until Dinis confirms that person, or a parent, agreed.
 - Everything marked "to confirm" or "as told by Dinis": the band's name and years, the school, the Lisbon concert's name, venue and dates, the award in his Instagram bio, the Spotify album's title and year, who played on each video.
 
 ## Decisions (Dinis Cruz, 2026-11-16 ~21:40 UTC, relayed by cells@)

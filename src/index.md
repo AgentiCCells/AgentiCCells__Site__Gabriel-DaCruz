@@ -1,6 +1,6 @@
 # Gabriel DaCruz: composer, multi-instrumentalist and music producer
 
-> Gabriel DaCruz is a composer, multi-instrumentalist and music producer (his own description, on Instagram). His brother, Dinis Cruz, describes him as a composer, arranger, producer, studio technician and conductor, who in Lisbon put together an orchestra to play film music live, in time with the films on a screen. His work online: seven compositions on Patreon, a suite in movements on Spotify, Apple Music and SoundCloud, and videos on YouTube, including a synth video of Journey's Separate Ways filmed with three old iPhones. Every fact here names its source. Anything marked TO CONFIRM or "as told by Dinis" waits for Gabriel's own word.
+> Gabriel DaCruz is a composer, multi-instrumentalist and music producer (his own description, on Instagram). His brother, Dinis Cruz, describes him as a composer, arranger, producer, studio technician and conductor, who in Lisbon put together an orchestra to play film music live, in time with the films on a screen. His work online: seven compositions on Patreon, a suite in movements on Spotify and Apple Music, an album he composed and conducted (COR, Live at café Império), themes and film and TV cues on SoundCloud, and videos on YouTube, including a synth video of Journey's Separate Ways filmed with three old iPhones. Every fact here names its source. Anything marked TO CONFIRM or "as told by Dinis" waits for Gabriel's own word.
 
 This file is the master copy of the facts on https://gabriel-dacruz.agenticcells.site/ (version __VERSION__). The HTML designs show the same facts. For instructions for AI agents, see [llms.txt](https://gabriel-dacruz.agenticcells.site/llms.txt).
 
@@ -50,7 +50,7 @@ The three frames are one take. He bought two iPhone 12s and an iPhone 13 second-
 
 ### A suite in movements, on Spotify
 
-Tracks as numbered on his Spotify album: I. Intro, II. Sol, III. Mar, IV. Sognando Anita, I. Lua. Also on Apple Music and SoundCloud, under his name. The album's title and year: TO CONFIRM. [1]
+Tracks as numbered on his Spotify album: I. Intro, II. Sol, III. Mar, IV. Sognando Anita, I. Lua. Also on Apple Music, under his name. The album's title and year: TO CONFIRM. [1]
 
 ### Seven compositions, on Patreon
 
@@ -58,6 +58,18 @@ Tracks as numbered on his Spotify album: I. Intro, II. Sol, III. Mar, IV. Sognan
 - March 2026: Journey, Magic Nocte, Fleur, Amazónia.
 
 At https://www.patreon.com/GabrielDaCruz. [4]
+
+### On record: COR, Live at café Império
+
+An album whose cover reads "Music composed and conducted by Gabriel DaCruz". Where and when it was recorded, the musicians, and where to hear it: TO CONFIRM. [8]
+
+### On SoundCloud: themes and film cues
+
+At https://soundcloud.com/gabriel-da-cruz, as listed on 16 November 2026: [7]
+
+- Themes, 2023: Tudo Azul, main theme (20 June 2023); Adeamus Sate (21 May 2023).
+- A playlist called Media, of film and TV cues: WF 1M25 Next Morning (film score, 2011), WF 2M14 Big Finale (film score, 2011), TB EP20 1M3 (TV, 2011), TG 3M3 V1.00 (film score, 2014), TG 4M1 V1.03 (film score, 2014).
+- "1M25" is how film music names a cue: reel 1, music cue 25. Which films and series WF, TG and TB stand for: TO CONFIRM.
 
 ### On video (his YouTube channel)
 
@@ -87,14 +99,15 @@ On Instagram, Gabriel invites messages about lessons: https://www.instagram.com/
 
 ## Photos
 
-The site uses only Gabriel's own photos. None yet: four slots wait for them (the studio, at the synth, the orchestra, a portrait).
+Gabriel's own photos, supplied by Dinis Cruz on 16 November 2026: Gabriel in his studio with a bass, at the studio desk, a portrait, and the cover of COR. The photos stay his; ask before reusing them. [8]
 
 ## Where to find him
 
 - Instagram: https://www.instagram.com/gabrieldacruz_composer/
 - YouTube: https://www.youtube.com/@gabrieldacruz_composer
 - Patreon: https://www.patreon.com/GabrielDaCruz
-- Also on Spotify, Apple Music and SoundCloud, as Gabriel DaCruz.
+- SoundCloud: https://soundcloud.com/gabriel-da-cruz
+- Also on Spotify and Apple Music, as Gabriel DaCruz.
 
 ## Sources
 
@@ -104,10 +117,12 @@ The site uses only Gabriel's own photos. None yet: four slots wait for them (the
 4. [His Patreon](https://www.patreon.com/GabrielDaCruz), as recorded in source 1.
 5. [His YouTube channel](https://www.youtube.com/@gabrieldacruz_composer), as recorded in sources 1 and 2.
 6. [His Instagram](https://www.instagram.com/gabrieldacruz_composer/), as recorded in source 1.
+7. [His SoundCloud](https://soundcloud.com/gabriel-da-cruz): the 2023 themes and the Media playlist of cues, with the dates and tags shown there. Read 16 November 2026.
+8. Photos and the cover of COR, supplied by Dinis Cruz for this site on 16 November 2026.
 
 ## How this site is made
 
 - Nothing is written in Gabriel's voice. Quotes are his words as recorded and published in sources 2 and 3.
 - No credit, date or number is added until he confirms it. Gabriel approves every change about him, through Dinis.
-- The drawings are illustrations made for this site from the descriptions in the sources, not photos and not his scores.
+- The drawings are illustrations made for this site from the descriptions in the sources, not photos and not his scores. The photos are Gabriel's own (source 8).
 - Made by site@AgentiCCells.gabriel-dacruz for Dinis Cruz. Repository: https://github.com/AgentiCCells/AgentiCCells__Site__Gabriel-DaCruz (branch dev). Code Apache-2.0, text and drawings CC BY 4.0.

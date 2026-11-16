@@ -68,6 +68,26 @@ tr = {
  ('His Patreon</a>: the seven compositions and their months, as recorded in source 1.','O Patreon dele</a>: as sete composições e os meses, como registado na fonte 1.'),
  ('His YouTube channel, @gabrieldacruz_composer</a>: the videos on this page, as recorded in sources 1 and 2.','O canal de YouTube, @gabrieldacruz_composer</a>: os vídeos desta página, como registado nas fontes 1 e 2.'),
  ('His Instagram, @gabrieldacruz_composer</a>: how he describes himself, and his invitation to message him about lessons, as recorded in source 1.','O Instagram, @gabrieldacruz_composer</a>: como se descreve e o convite para lhe escreverem sobre aulas, como registado na fonte 1.'),
+ ('His SoundCloud, Gabriel DaCruz</a>: the two 2023 themes and the Media playlist of film and TV cues, with the dates and tags shown there. Read 16 November 2026.','O SoundCloud, Gabriel DaCruz</a>: os dois temas de 2023 e a playlist Media de cues de cinema e TV, com as datas e etiquetas que lá aparecem. Lido a 16 de novembro de 2026.'),
+ ('Photos and the cover of COR, supplied by Dinis Cruz for this site on 16 November 2026. Photos used with permission; not to be reused without asking.','Fotografias e capa de COR, enviadas por Dinis Cruz para este site a 16 de novembro de 2026. Usadas com autorização; não reutilizar sem pedir.'),
+],
+'cor.part': [
+ ('alt="The cover of COR: Gabriel conducting, with the words Live at café Império, COR, music composed and conducted by Gabriel DaCruz."','alt="A capa de COR: o Gabriel a dirigir, com as palavras Live at café Império, COR, music composed and conducted by Gabriel DaCruz."'),
+ ('<p class="when">Album</p>','<p class="when">Álbum</p>'),
+ ('"Music composed and conducted by Gabriel DaCruz", in the words of its cover.','"Music composed and conducted by Gabriel DaCruz" (música composta e dirigida por Gabriel DaCruz), nas palavras da capa.'),
+ ('Where it was recorded, when, with which musicians, and where to hear it:','Onde e quando foi gravado, com que músicos, e onde ouvir:'),
+ ('to confirm</span>','a confirmar</span>'),
+],
+'soundcloud.part': [
+ ('Themes, 2023','Temas, 2023'),
+ ('<b>Tudo Azul, main theme</b><span>20 June 2023</span>','<b>Tudo Azul, tema principal</b><span>20 de junho de 2023</span>'),
+ ('<span>21 May 2023</span>','<span>21 de maio de 2023</span>'),
+ ('Film and TV cues, 2011 to 2014','Cues de cinema e TV, 2011 a 2014'),
+ ('film score · 2011','cinema · 2011'),('film score · 2014','cinema · 2014'),
+ ('<span>TV · 2011</span>','<span>TV · 2011</span>'),
+ ('From his SoundCloud, as listed there on 16 November 2026: the two themes he published in 2023, and a playlist called Media of cues tagged film score and TV. "1M25" is how film music names a cue: reel 1, music cue 25. Which films and series WF, TG and TB stand for:',
+  'Do SoundCloud dele, como lá aparecem a 16 de novembro de 2026: os dois temas publicados em 2023 e uma playlist chamada Media com cues marcados como cinema e TV. "1M25" é como a música de cinema dá nome a um cue: rolo 1, cue de música 25. A que filmes e séries correspondem WF, TG e TB:'),
+ ('to confirm</span>','a confirmar</span>'),
 ],
 }
 for name, pairs in tr.items():
