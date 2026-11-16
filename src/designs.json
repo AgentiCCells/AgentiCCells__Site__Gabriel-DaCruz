@@ -1,8 +1,41 @@
 {
-  "note": "The same facts in each design; the master copy is /index.md.",
-  "designs": [
-    { "name": "The Studio", "path": "/", "idea": "A studio at night: dark, warm, gold and signal teal; the work leads, each section explained with a drawing." },
-    { "name": "The Score", "path": "/d/score/", "idea": "A printed score in six movements: paper, ink and oxblood; plates instead of figures." },
-    { "name": "The Signal Chain", "path": "/d/signal/", "idea": "A studio rack and patch bay: input, instrument, effects, capture, output; LEDs and monospace labels." }
-  ]
+ "about": "The same site, the same facts and sources, in five designs. The master copy of the facts is /index.md; the picker is /d/.",
+ "default": "studio",
+ "designs": [
+  {
+   "slug": "studio",
+   "name": "The Studio",
+   "tagline": "A studio at night: his work first, each section explained with a drawing. The default.",
+   "path": "/",
+   "thumb": "/assets/designs/studio.jpg"
+  },
+  {
+   "slug": "sleeve",
+   "name": "The Sleeve",
+   "tagline": "A record sleeve and liner notes, after the look of his COR cover: Side A the music, Side B how it was made.",
+   "path": "/d/sleeve/",
+   "thumb": "/assets/designs/sleeve.jpg"
+  },
+  {
+   "slug": "cues",
+   "name": "The Cue Sheet",
+   "tagline": "A film composer's cue sheet: a letterboxed frame, reel by reel, with his own film and TV cues.",
+   "path": "/d/cues/",
+   "thumb": "/assets/designs/cues.jpg"
+  },
+  {
+   "slug": "score",
+   "name": "The Score",
+   "tagline": "A printed score in six movements: paper, ink and oxblood, figures as plates.",
+   "path": "/d/score/",
+   "thumb": "/assets/designs/score.jpg"
+  },
+  {
+   "slug": "signal",
+   "name": "The Signal Chain",
+   "tagline": "A studio rack and patch bay, from input to output: LEDs and monospace labels.",
+   "path": "/d/signal/",
+   "thumb": "/assets/designs/signal.jpg"
+  }
+ ]
 }

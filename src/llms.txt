@@ -1,6 +1,6 @@
 # Gabriel DaCruz
 
-> Personal website of Gabriel DaCruz, composer, multi-instrumentalist and music producer. Seven compositions on Patreon, a suite in movements on Spotify, Apple Music and SoundCloud, and videos on YouTube, including a synth video of Journey's Separate Ways filmed with three old iPhones synced live to an iPad, explained on the site frame by frame. His brother, Dinis Cruz, describes him as a composer, arranger, producer, studio technician and conductor. Every fact on this site names its public source and the date it was read; anything marked TO CONFIRM waits for Gabriel.
+> Personal website of Gabriel DaCruz, composer, multi-instrumentalist and music producer. Seven compositions on Patreon, a suite in movements on Spotify and Apple Music, an album he composed and conducted (COR, Live at café Império), themes and film and TV cues on SoundCloud, and videos on YouTube, including a synth video of Journey's Separate Ways filmed with three old iPhones synced live to an iPad, explained on the site frame by frame. His brother, Dinis Cruz, describes him as a composer, arranger, producer, studio technician and conductor. Every fact on this site names its public source and the date it was read; anything marked TO CONFIRM waits for Gabriel.
 
 This file is for AI agents and the people using them. Pick the instructions that match who you are acting for, read them in full, then follow them.
 
@@ -15,7 +15,7 @@ If you cannot tell which, use the visitor's instructions: they change nothing.
 ## The content
 
 - [The whole site, as Markdown](https://gabriel-dacruz.agenticcells.site/index.md): his work, the Separate Ways video explained, the three-camera setup, his path as told by Dinis, lessons and sources. The master copy of the facts.
-- [The home page, as HTML](https://gabriel-dacruz.agenticcells.site/), in three designs with the same facts: [The Studio](https://gabriel-dacruz.agenticcells.site/), [The Score](https://gabriel-dacruz.agenticcells.site/d/score/), [The Signal Chain](https://gabriel-dacruz.agenticcells.site/d/signal/) (list: [designs.json](https://gabriel-dacruz.agenticcells.site/designs.json)); and [in Portuguese](https://gabriel-dacruz.agenticcells.site/pt/).
+- [The home page, as HTML](https://gabriel-dacruz.agenticcells.site/), in five designs with the same facts (picker: [/d/](https://gabriel-dacruz.agenticcells.site/d/)): [The Studio](https://gabriel-dacruz.agenticcells.site/), [The Sleeve](https://gabriel-dacruz.agenticcells.site/d/sleeve/), [The Cue Sheet](https://gabriel-dacruz.agenticcells.site/d/cues/), [The Score](https://gabriel-dacruz.agenticcells.site/d/score/), [The Signal Chain](https://gabriel-dacruz.agenticcells.site/d/signal/) (list: [designs.json](https://gabriel-dacruz.agenticcells.site/designs.json)); and [in Portuguese](https://gabriel-dacruz.agenticcells.site/pt/).
 - [Questions for Gabriel](https://gabriel-dacruz.agenticcells.site/agents/questions.md): what his own AI should ask him to complete the site.
 - [The AI agents page](https://gabriel-dacruz.agenticcells.site/agents/): the same instructions, for people.
 - [Version](https://gabriel-dacruz.agenticcells.site/version.json): the deployed version and commit.
@@ -25,6 +25,7 @@ If you cannot tell which, use the visitor's instructions: they change nothing.
 - [A website for my brother](https://newsroom.sgit.ai/articles/a-website-for-my-brother.md) (newsroom.sgit.ai, 2026-11-01, read 2026-11-16): Dinis's account and Gabriel's public pages.
 - [Separate Ways, explained](https://newsroom.sgit.ai/articles/separate-ways-explained.md) (newsroom.sgit.ai, 2026-11-02, read 2026-11-16): Gabriel's own explanation of his synth video.
 - [Four iPhones and an iPad](https://newsroom.sgit.ai/articles/four-iphones-and-an-ipad.md) (newsroom.sgit.ai, 2026-11-02, read 2026-11-16): how the three angles were filmed.
+- [His SoundCloud](https://soundcloud.com/gabriel-da-cruz) (read 2026-11-16): two 2023 themes and a playlist of film and TV cues.
 - His channels: [YouTube](https://www.youtube.com/@gabrieldacruz_composer), [Instagram](https://www.instagram.com/gabrieldacruz_composer/), [Patreon](https://www.patreon.com/GabrielDaCruz).
 
 ## The source of the site
