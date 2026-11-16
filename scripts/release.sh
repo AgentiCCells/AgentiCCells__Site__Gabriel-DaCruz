@@ -4,6 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 node scripts/build.mjs
 node scripts/validate.mjs
+node scripts/smoke.mjs
 node scripts/leak-scan.mjs
 for i in 1 2 3 4 5; do
   git fetch -q origin dev

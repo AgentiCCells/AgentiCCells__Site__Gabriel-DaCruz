@@ -40,6 +40,11 @@ jobs:
         env:
           SITE_VERSION: ${{ steps.version.outputs.version }}
       - run: node scripts/validate.mjs
+      - name: Smoke test in Chromium (every page at 390 and 1280 px, no console errors, no other hosts, the order flow where there is one)
+        run: |
+          npm install --no-save --no-package-lock --no-audit --no-fund playwright@1.63.0
+          npx playwright install --with-deps chromium
+          node scripts/smoke.mjs
       - name: Leak scan (tracked files and the built site)
         run: node scripts/leak-scan.mjs
       - uses: actions/configure-pages@v5
