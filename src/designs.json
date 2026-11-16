@@ -1,0 +1,8 @@
+{
+  "note": "The same facts in each design; the master copy is /index.md.",
+  "designs": [
+    { "name": "The Studio", "path": "/", "idea": "A studio at night: dark, warm, gold and signal teal; the work leads, each section explained with a drawing." },
+    { "name": "The Score", "path": "/d/score/", "idea": "A printed score in six movements: paper, ink and oxblood; plates instead of figures." },
+    { "name": "The Signal Chain", "path": "/d/signal/", "idea": "A studio rack and patch bay: input, instrument, effects, capture, output; LEDs and monospace labels." }
+  ]
+}

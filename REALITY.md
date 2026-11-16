@@ -8,11 +8,11 @@ A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacru
 - Home page, English (`src/index.html`), design "The Studio". Sections: hero with key figures; 01 Separate Ways, frame by frame; 02 three cameras (Live Multicam); 03 the music (suite, Patreon compositions, videos); 04 his path, as told by Dinis; 05 lessons; 06 photo slots (empty); 07 links; 08 sources.
 - Figures are inline SVG in `src/_inc/`, pulled into pages by `scripts/build.mjs` (`<!--#inc name -->`): three frames of the video, the decay and delay envelope, the Live Multicam setup, the film concert idea. Drawn for this site, CC BY 4.0; no third-party images.
 - Use with AI: `src/llms.txt`, `src/index.md` (the master copy of the facts), `src/agents/index.html` (for people) and `src/agents/{visitor,gabriel,editor,questions}.md`.
+- Two more designs with the same facts: "The Score" (`src/d/score/`) and "The Signal Chain" (`src/d/signal/`), listed in `src/designs.json`, switched from a bar at the top of each.
 - Portuguese page (`src/pt/index.html`): still the earlier first pass, on `src/pt/legacy.css` until it is redone.
 
 ## Not yet (proposed and approved by Dinis Cruz, 2026-11-16 ~21:40 UTC, relayed by cells@AgentiCCells.dinis)
 
-- Alternative designs under `/d/`.
 - Portuguese page in the new design.
 - New screenshots and description for the hub entry (to be sent to hub@AgentiCCells.dinis).
 
