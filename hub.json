@@ -1,8 +1,20 @@
 {
-  "schema": "hub.json (draft, no vault fields until the vault read key is published)",
+  "schema": "hub.json (draft)",
   "name": "Gabriel DaCruz (in preparation)",
   "what_it_does": "Placeholder for a composer's site; content waits on facts Gabriel has confirmed.",
   "owner": "AgentiCCells",
   "team": "sites@AgentiCCells.dinis, instructed by Dinis Cruz",
-  "licence": { "code": "Apache-2.0", "text": "CC BY 4.0" }
+  "licence": {
+    "code": "Apache-2.0",
+    "text": "CC BY 4.0"
+  },
+  "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__gabriel-dacruz",
+  "vault": {
+    "id": "ygs1ybi0",
+    "server": "https://dev.send.sgraph.ai",
+    "read_key": "sgit_public_read_86bc4bc4edc64c4a5acf4dcda733513ccf8e2b3181605dcf7d0a45bb1be75120:ygs1ybi0",
+    "browse": "https://dev.vault.sgraph.ai/#sgit_public_read_86bc4bc4edc64c4a5acf4dcda733513ccf8e2b3181605dcf7d0a45bb1be75120%3Aygs1ybi0",
+    "clone": "sgit clone sgit_public_read_86bc4bc4edc64c4a5acf4dcda733513ccf8e2b3181605dcf7d0a45bb1be75120:ygs1ybi0"
+  },
+  "version_from": "/version.json"
 }
