@@ -51,6 +51,18 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+  vault:
+    # Seals this commit's files into the site's sgit vault when the SGIT_VAULT_KEY secret exists;
+    # skipped cleanly without it. Separate from deploy, so a vault problem never blocks the site.
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync the vault (only with the SGIT_VAULT_KEY secret; the key is never printed)
+        env:
+          SGIT_VAULT_KEY: ${{ secrets.SGIT_VAULT_KEY }}
+          SGIT_TOKEN: ${{ secrets.SGIT_TOKEN }}
+        run: scripts/vault-sync.sh
   deploy:
     needs: build
     runs-on: ubuntu-latest
