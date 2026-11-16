@@ -16,6 +16,8 @@ If you cannot tell which, use the visitor's instructions: they change nothing.
 
 - [The whole site, as Markdown](https://gabriel-dacruz.agenticcells.site/index.md): his work, the Separate Ways video explained, the three-camera setup, his path as told by Dinis, lessons and sources. The master copy of the facts.
 - [The home page, as HTML](https://gabriel-dacruz.agenticcells.site/), in five designs with the same facts (picker: [/d/](https://gabriel-dacruz.agenticcells.site/d/)): [The Studio](https://gabriel-dacruz.agenticcells.site/), [The Sleeve](https://gabriel-dacruz.agenticcells.site/d/sleeve/), [The Cue Sheet](https://gabriel-dacruz.agenticcells.site/d/cues/), [The Score](https://gabriel-dacruz.agenticcells.site/d/score/), [The Signal Chain](https://gabriel-dacruz.agenticcells.site/d/signal/) (list: [designs.json](https://gabriel-dacruz.agenticcells.site/designs.json)); and [in Portuguese](https://gabriel-dacruz.agenticcells.site/pt/).
+- [Every work](https://gabriel-dacruz.agenticcells.site/works/) and [as data](https://gabriel-dacruz.agenticcells.site/works.json): twenty works, where each lives, what is to confirm.
+- [Status](https://gabriel-dacruz.agenticcells.site/status/): how the site is run and what waits for Gabriel.
 - [Questions for Gabriel](https://gabriel-dacruz.agenticcells.site/agents/questions.md): what his own AI should ask him to complete the site.
 - [The AI agents page](https://gabriel-dacruz.agenticcells.site/agents/): the same instructions, for people.
 - [Version](https://gabriel-dacruz.agenticcells.site/version.json): the deployed version and commit.

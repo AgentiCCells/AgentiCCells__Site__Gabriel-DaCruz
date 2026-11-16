@@ -109,6 +109,13 @@ Gabriel's own photos, supplied by Dinis Cruz on 16 November 2026: Gabriel in his
 - SoundCloud: https://soundcloud.com/gabriel-da-cruz
 - Also on Spotify and Apple Music, as Gabriel DaCruz.
 
+## How this site grows (plan)
+
+The plan in Dinis's brief for this site, not yet running: own the masters, project everything else. A master Gabriel controls (the recording, video or score at full quality, in storage of his own); a page on this site for every work (the player, the story, the credits, the score); and a copy made for each platform (YouTube, Instagram, Spotify and Apple Music, SoundCloud, Patreon), each linking back to the work's page. Also in the plan: everything he owns uploaded raw and listed; one interview question a day by voice memo, turned into a post he confirms; a weekly brief. [1]
+
+- Every work this site knows of (twenty on 16 November 2026), and where each lives: https://gabriel-dacruz.agenticcells.site/works/ (as data: https://gabriel-dacruz.agenticcells.site/works.json). None has its own page yet.
+- How the site is run, and what waits for Gabriel: https://gabriel-dacruz.agenticcells.site/status/
+
 ## Sources
 
 1. [A website for my brother](https://newsroom.sgit.ai/articles/a-website-for-my-brother.md), by Dinis Cruz, SGit Newsroom, 1 November 2026. Dinis's account of Gabriel's work, and Gabriel's public pages as read on 1 and 2 November 2026. Read 16 November 2026.

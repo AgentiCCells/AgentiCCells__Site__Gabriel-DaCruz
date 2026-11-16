@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Site status: Gabriel DaCruz</title>
+<meta name="description" content="How Gabriel DaCruz's site is run, what is waiting for him to confirm, and what comes next.">
+<link rel="stylesheet" href="../style.css">
+<meta name="theme-color" content="#121016">
+<style>
+.wait { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.wait li { display: grid; grid-template-columns: 1.4rem 1fr; gap: .6rem; padding: .7rem 1rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; color: var(--muted); font-size: .94rem; }
+.wait li::before { content: "○"; color: var(--gold); }
+.wait li.done::before { content: "●"; color: var(--signal); }
+.wait b { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="name" href="../index.html">Gabriel DaCruz</a>
+    <nav class="nav" aria-label="Site">
+      <a href="../index.html">Home</a>
+      <a href="../works/">Every work</a>
+      <a href="../d/">Designs</a>
+      <a href="../agents/">Use with AI</a>
+    </nav>
+    <a class="lang" href="../pt/index.html" hreflang="pt" lang="pt">PT</a>
+  </div>
+</header>
+<main id="main">
+<section class="band" style="border-top:0" aria-labelledby="st-h">
+  <div class="wrap">
+    <p class="kicker">Site status · version __VERSION__</p>
+    <h1 id="st-h" style="font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.05;margin:0 0 1rem">How this site is run, and what waits for Gabriel</h1>
+    <p class="intro">A public page, as his brother's brief asks: how the site is made, and the list of things that appear only once Gabriel confirms them.<sup class="s"><a href="../index.html#s1">1</a></sup></p>
+    <div class="split">
+      <div>
+        <h2 style="font-size:1.8rem">Waiting for Gabriel</h2>
+        <ul class="wait">
+          <li><span><b>Separate Ways:</b> a direct link to the video.</span></li>
+          <li><span><b>The Spotify album:</b> its title and year, and a link.</span></li>
+          <li><span><b>COR, Live at café Império:</b> where and when, the musicians, where to hear it.</span></li>
+          <li><span><b>The film and TV cues:</b> which films and series WF, TG and TB are.</span></li>
+          <li><span><b>Two names in two places:</b> is "Tudo Azul, main theme" part of Suite Tudo Azul; are Ademus Sate and Adeamus Sate one piece?</span></li>
+          <li><span><b>Each video:</b> who played, where and when.</span></li>
+          <li><span><b>The band in the Algarve:</b> its name and years.</span></li>
+          <li><span><b>The music school:</b> its name, where and when.</span></li>
+          <li><span><b>The Lisbon film music concert:</b> its name, venue, dates and films.</span></li>
+          <li><span><b>The award</b> his Instagram description mentions.</span></li>
+          <li><span><b>A photo of a lesson</b> showing another person: published only if that person agrees.</span></li>
+          <li class="done"><span><b>Photos of the studio and a portrait:</b> arrived 16 November 2026, now on the site.</span></li>
+        </ul>
+        <p class="src">The questions his own agent will ask him: <a href="../agents/questions.md">agents/questions.md</a>.</p>
+      </div>
+      <div>
+        <h2 style="font-size:1.8rem">How it is run</h2>
+        <ul class="uses">
+          <li><b>Files in git.</b> The site is a public repository; a change pushed to its dev branch is live in a few minutes.</li>
+          <li><b>Checked before it goes out.</b> Every change passes a validator (no broken links, no hype words), a leak scan for secrets, and a test of every page in a browser at phone and desktop widths.</li>
+          <li><b>Gabriel approves.</b> Every change about him goes through his brother, and nothing is published as fact until he confirms it. No credit, date or number is invented.</li>
+          <li><b>Readable by agents.</b> The facts are in <a href="../index.md">index.md</a>, the works in <a href="../works.json">works.json</a>, and <a href="../llms.txt">llms.txt</a> says how to use them.</li>
+        </ul>
+        <h2 style="font-size:1.8rem;margin-top:2rem">What comes next <span class="tbc">plan</span></h2>
+        <ul class="uses">
+          <li><b>A page for every work,</b> starting from <a href="../works/">the list of twenty</a>.</li>
+          <li><b>Everything he owns online:</b> recordings, sessions, scores and videos, uploaded raw and listed, so nothing is lost with a computer or an account.</li>
+          <li><b>A short interview a day,</b> by voice memo, turned into a post he confirms, and his story written one conversation at a time.</li>
+          <li><b>A weekly brief:</b> what was published, what waits for him, what is stuck.</li>
+        </ul>
+        <p class="src">The plan in his brother's brief, not yet running.<sup class="s"><a href="../index.html#s1">1</a></sup></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site"><div class="wrap"><p>Gabriel DaCruz · version __VERSION__ · <a href="../index.html">home</a> · Code Apache-2.0, text CC BY 4.0</p></div></footer>
+</body>
+</html>

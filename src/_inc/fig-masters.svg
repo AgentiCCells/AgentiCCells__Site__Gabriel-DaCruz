@@ -1,0 +1,25 @@
+<svg class="fig fig-masters" viewBox="0 0 480 470" role="img" aria-labelledby="fo-t fo-d">
+  <title id="fo-t">Own the masters, project everything else</title>
+  <desc id="fo-d">The plan in Dinis's brief for this site, drawn as three layers. At the top, the master Gabriel controls: the full-quality recording, video or score. In the middle, a page on this site for every work: the player, the story, the credits, the score. At the bottom, a copy made for each platform, YouTube, Instagram, Spotify and Apple Music, SoundCloud and Patreon, each linking back to the work's page. A plan, not yet running.</desc>
+  <rect x="120" y="10" width="240" height="78" rx="10" fill="var(--fig-chip)" stroke="var(--fig-accent)" stroke-width="2"/>
+  <text x="240" y="40" text-anchor="middle" class="fig-label" fill="var(--fig-accent)">1 · The master he controls</text>
+  <text x="240" y="62" text-anchor="middle" class="fig-small" fill="var(--fig-muted)">recording, video, score, stems</text>
+  <text x="240" y="78" text-anchor="middle" class="fig-small" fill="var(--fig-muted)">at full quality, in storage of his own</text>
+  <path d="M240 90 L240 128" stroke="var(--fig-accent)" stroke-width="2"/><path d="M234 122 L240 132 L246 122" fill="none" stroke="var(--fig-accent)" stroke-width="2"/>
+  <rect x="80" y="134" width="320" height="96" rx="10" fill="var(--fig-panel)" stroke="var(--fig-signal)" stroke-width="2"/>
+  <text x="240" y="164" text-anchor="middle" class="fig-label" fill="var(--fig-signal)">2 · A page on this site for every work</text>
+  <text x="240" y="188" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">the player · the story · the credits</text>
+  <text x="240" y="208" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">the score · related works · how to support</text>
+  <g stroke="var(--fig-muted)" stroke-width="1.5" fill="none">
+    <path d="M140 232 L60 300"/><path d="M190 232 L150 300"/><path d="M240 232 L240 300"/><path d="M290 232 L330 300"/><path d="M340 232 L420 300"/>
+  </g>
+  <g class="fig-small">
+    <rect x="12" y="302" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="60" y="329" text-anchor="middle" fill="var(--fig-ink)">YouTube</text>
+    <rect x="102" y="352" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="150" y="379" text-anchor="middle" fill="var(--fig-ink)">Instagram</text>
+    <rect x="186" y="302" width="108" height="44" rx="8" fill="var(--fig-chip)"/><text x="240" y="322" text-anchor="middle" fill="var(--fig-ink)">Spotify,</text><text x="240" y="338" text-anchor="middle" fill="var(--fig-ink)">Apple Music</text>
+    <rect x="282" y="352" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="330" y="379" text-anchor="middle" fill="var(--fig-ink)">SoundCloud</text>
+    <rect x="372" y="302" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="420" y="329" text-anchor="middle" fill="var(--fig-ink)">Patreon</text>
+  </g>
+  <text x="240" y="428" text-anchor="middle" class="fig-label" fill="var(--fig-ink)">3 · A copy made for each platform</text>
+  <text x="240" y="450" text-anchor="middle" class="fig-small" fill="var(--fig-signal)">each one links back to the work's page</text>
+</svg>

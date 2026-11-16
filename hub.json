@@ -1,7 +1,7 @@
 {
   "schema": "hub.json (draft)",
   "name": "Gabriel DaCruz",
-  "what_it_does": "Personal site of Gabriel DaCruz, composer, multi-instrumentalist and music producer: his compositions and suite, his synth video of Separate Ways explained frame by frame, the three old iPhones he filmed it with, his path as told by his brother, and lessons. Three designs, English and Portuguese, llms.txt for AI agents; every fact sourced.",
+  "what_it_does": "Personal site of Gabriel DaCruz, composer, multi-instrumentalist and music producer: his compositions, suite, album COR and film cues, his synth video of Separate Ways explained frame by frame, his studio in photos, his path as told by his brother, and lessons. Five designs, English and Portuguese, a catalogue of every work, llms.txt for AI agents; every fact sourced.",
   "owner": "AgentiCCells",
   "team": "site@AgentiCCells.gabriel-dacruz, instructed by Dinis Cruz",
   "licence": {
@@ -18,5 +18,6 @@
   },
   "version_from": "/version.json",
   "designs": "/designs.json",
-  "llms": "/llms.txt"
+  "llms": "/llms.txt",
+  "works": "/works.json"
 }

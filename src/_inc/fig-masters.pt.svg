@@ -1,0 +1,25 @@
+<svg class="fig fig-masters" viewBox="0 0 480 470" role="img" aria-labelledby="fo-t fo-d">
+  <title id="fo-t">Ser dono dos masters, projetar o resto</title>
+  <desc id="fo-d">O plano do texto do Dinis para este site, em três camadas. Em cima, o master que o Gabriel controla: a gravação, o vídeo ou a partitura em qualidade total. Ao meio, uma página neste site para cada obra: o leitor, a história, os créditos, a partitura. Em baixo, uma cópia feita para cada plataforma, YouTube, Instagram, Spotify e Apple Music, SoundCloud e Patreon, cada uma com um link para a página da obra. Um plano, ainda não em curso.</desc>
+  <rect x="120" y="10" width="240" height="78" rx="10" fill="var(--fig-chip)" stroke="var(--fig-accent)" stroke-width="2"/>
+  <text x="240" y="40" text-anchor="middle" class="fig-label" fill="var(--fig-accent)">1 · O master que ele controla</text>
+  <text x="240" y="62" text-anchor="middle" class="fig-small" fill="var(--fig-muted)">gravação, vídeo, partitura, stems</text>
+  <text x="240" y="78" text-anchor="middle" class="fig-small" fill="var(--fig-muted)">em qualidade total, num arquivo seu</text>
+  <path d="M240 90 L240 128" stroke="var(--fig-accent)" stroke-width="2"/><path d="M234 122 L240 132 L246 122" fill="none" stroke="var(--fig-accent)" stroke-width="2"/>
+  <rect x="80" y="134" width="320" height="96" rx="10" fill="var(--fig-panel)" stroke="var(--fig-signal)" stroke-width="2"/>
+  <text x="240" y="164" text-anchor="middle" class="fig-label" fill="var(--fig-signal)">2 · Uma página neste site para cada obra</text>
+  <text x="240" y="188" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">o leitor · a história · os créditos</text>
+  <text x="240" y="208" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">a partitura · obras ligadas · como apoiar</text>
+  <g stroke="var(--fig-muted)" stroke-width="1.5" fill="none">
+    <path d="M140 232 L60 300"/><path d="M190 232 L150 300"/><path d="M240 232 L240 300"/><path d="M290 232 L330 300"/><path d="M340 232 L420 300"/>
+  </g>
+  <g class="fig-small">
+    <rect x="12" y="302" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="60" y="329" text-anchor="middle" fill="var(--fig-ink)">YouTube</text>
+    <rect x="102" y="352" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="150" y="379" text-anchor="middle" fill="var(--fig-ink)">Instagram</text>
+    <rect x="186" y="302" width="108" height="44" rx="8" fill="var(--fig-chip)"/><text x="240" y="322" text-anchor="middle" fill="var(--fig-ink)">Spotify,</text><text x="240" y="338" text-anchor="middle" fill="var(--fig-ink)">Apple Music</text>
+    <rect x="282" y="352" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="330" y="379" text-anchor="middle" fill="var(--fig-ink)">SoundCloud</text>
+    <rect x="372" y="302" width="96" height="44" rx="8" fill="var(--fig-chip)"/><text x="420" y="329" text-anchor="middle" fill="var(--fig-ink)">Patreon</text>
+  </g>
+  <text x="240" y="428" text-anchor="middle" class="fig-label" fill="var(--fig-ink)">3 · Uma cópia feita para cada plataforma</text>
+  <text x="240" y="450" text-anchor="middle" class="fig-small" fill="var(--fig-signal)">cada uma com um link para a página da obra</text>
+</svg>
