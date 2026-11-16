@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <!-- Drawn by sites-design@AgentiCCells.dinis, 2026-11-16: a staff with a phrase of notes. Not from any of Gabriel's scores. CC BY 4.0. -->
+  <g fill="none" stroke="#c9a46a" stroke-width="1.6" opacity=".55">
+    <path d="M-20 150 C 200 110 420 200 640 160 S 1000 110 1220 150"/>
+    <path d="M-20 170 C 200 130 420 220 640 180 S 1000 130 1220 170"/>
+    <path d="M-20 190 C 200 150 420 240 640 200 S 1000 150 1220 190"/>
+    <path d="M-20 210 C 200 170 420 260 640 220 S 1000 170 1220 210"/>
+    <path d="M-20 230 C 200 190 420 280 640 240 S 1000 190 1220 230"/>
+  </g>
+  <g fill="#c9a46a" opacity=".8">
+    <ellipse cx="610" cy="196" rx="11" ry="8" transform="rotate(-20 610 196)"/>
+    <ellipse cx="680" cy="176" rx="11" ry="8" transform="rotate(-20 680 176)"/>
+    <ellipse cx="750" cy="168" rx="11" ry="8" transform="rotate(-20 750 168)"/>
+    <ellipse cx="820" cy="150" rx="11" ry="8" transform="rotate(-20 820 150)"/>
+    <ellipse cx="900" cy="162" rx="11" ry="8" transform="rotate(-20 900 162)"/>
+    <ellipse cx="975" cy="140" rx="11" ry="8" transform="rotate(-20 975 140)"/>
+    <ellipse cx="1050" cy="155" rx="11" ry="8" transform="rotate(-20 1050 155)"/>
+  </g>
+  <g stroke="#c9a46a" stroke-width="2" opacity=".8">
+    <path d="M620 192V140M690 172V120M760 164V112M830 146V94M910 158V106M985 136V84M1060 151V99"/>
+    <path d="M620 140 L690 120M760 112 L830 94M910 106 L985 84" stroke-width="5"/>
+  </g>
+  <g fill="none" stroke="#c9a46a" stroke-width="1.2" opacity=".25">
+    <path d="M-20 300 C 300 260 600 340 900 300 S 1100 280 1220 300"/>
+    <path d="M-20 80 C 300 40 600 120 900 80 S 1100 60 1220 80"/>
+  </g>
+</svg>
