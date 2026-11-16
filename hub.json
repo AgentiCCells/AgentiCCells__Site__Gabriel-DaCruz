@@ -1,0 +1,8 @@
+{
+  "schema": "hub.json (draft, no vault fields until the vault read key is published)",
+  "name": "Gabriel DaCruz (in preparation)",
+  "what_it_does": "Placeholder for a composer's site; content waits on facts Gabriel has confirmed.",
+  "owner": "AgentiCCells",
+  "team": "sites@AgentiCCells.dinis, instructed by Dinis Cruz",
+  "licence": { "code": "Apache-2.0", "text": "CC BY 4.0" }
+}

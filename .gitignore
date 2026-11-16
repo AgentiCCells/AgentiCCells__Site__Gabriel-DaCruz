@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# sgit vault boundary (written before the vault is created)
+.sg_vault/local/
+.sg_vault/work/
+*.pem
+# build output
+_site/
