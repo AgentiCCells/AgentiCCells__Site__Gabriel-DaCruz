@@ -1,0 +1,31 @@
+<svg class="fig fig-concert" viewBox="0 0 480 320" role="img" aria-labelledby="fc-t fc-d">
+  <title id="fc-t">Film music played live, in time with the film on a screen</title>
+  <desc id="fc-d">A drawing of the idea of the Lisbon concert as Dinis describes it: a screen showing the film above the stage, an orchestra in arcs below it, and the conductor in front, keeping the music in time with the picture. Not a drawing of the real hall; its name, venue and dates wait for Gabriel.</desc>
+  <rect x="80" y="14" width="320" height="120" rx="4" fill="var(--fig-key)" stroke="var(--fig-line)" stroke-width="2"/>
+  <g opacity=".9">
+    <path d="M92 122 L170 64 L214 96 L268 46 L388 122 Z" fill="var(--fig-chip)"/>
+    <circle cx="340" cy="48" r="14" fill="var(--fig-accent)" opacity=".7"/>
+  </g>
+  <g fill="var(--fig-muted)">
+    <g opacity=".55">
+      <circle cx="120" cy="178" r="5"/><circle cx="146" cy="170" r="5"/><circle cx="172" cy="165" r="5"/><circle cx="198" cy="162" r="5"/><circle cx="224" cy="160" r="5"/><circle cx="250" cy="160" r="5"/><circle cx="276" cy="162" r="5"/><circle cx="302" cy="165" r="5"/><circle cx="328" cy="170" r="5"/><circle cx="354" cy="178" r="5"/>
+    </g>
+    <g opacity=".75">
+      <circle cx="140" cy="206" r="5.5"/><circle cx="168" cy="196" r="5.5"/><circle cx="196" cy="191" r="5.5"/><circle cx="224" cy="189" r="5.5"/><circle cx="252" cy="189" r="5.5"/><circle cx="280" cy="191" r="5.5"/><circle cx="308" cy="196" r="5.5"/><circle cx="336" cy="206" r="5.5"/>
+    </g>
+    <g>
+      <circle cx="166" cy="236" r="6"/><circle cx="196" cy="226" r="6"/><circle cx="226" cy="222" r="6"/><circle cx="254" cy="222" r="6"/><circle cx="284" cy="226" r="6"/><circle cx="314" cy="236" r="6"/>
+    </g>
+  </g>
+  <circle cx="240" cy="266" r="9" fill="var(--fig-accent)"/>
+  <path d="M226 304 q2 -26 14 -28 q12 2 14 28z" fill="var(--fig-accent)"/>
+  <path d="M250 262 l22 -18" stroke="var(--fig-accent)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M240 254 L240 140" stroke="var(--fig-signal)" stroke-width="1.5" stroke-dasharray="3 5"/>
+  <g class="fig-small">
+    <text x="410" y="70" fill="var(--fig-muted)">the film</text>
+    <text x="372" y="206" fill="var(--fig-muted)">the orchestra</text>
+    <text x="282" y="290" fill="var(--fig-ink)">the conductor</text>
+    <text x="60" y="290" fill="var(--fig-signal)">in time with</text>
+    <text x="60" y="306" fill="var(--fig-signal)">the picture</text>
+  </g>
+</svg>

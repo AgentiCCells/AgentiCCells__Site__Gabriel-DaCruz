@@ -1,0 +1,61 @@
+<svg class="fig fig-frames" viewBox="0 0 360 652" role="img" aria-labelledby="ff-t ff-d">
+  <title id="ff-t">One take of Separate Ways, seen from three cameras</title>
+  <desc id="ff-d">A drawing of the layout of Gabriel's synth video: three stacked frames of the same take. Top, the small keyboard from above. Middle, Gabriel at the desk, with the mixing console, the screen and the rack behind him. Bottom, close on the synthesizer's panel, where near the end his hand turns the decay down.</desc>
+  <defs>
+    <clipPath id="ff-c1"><rect x="0" y="0" width="360" height="204" rx="10"/></clipPath>
+    <clipPath id="ff-c2"><rect x="0" y="224" width="360" height="204" rx="10"/></clipPath>
+    <clipPath id="ff-c3"><rect x="0" y="448" width="360" height="204" rx="10"/></clipPath>
+  </defs>
+  <!-- Frame 1: the keyboard, from above -->
+  <g clip-path="url(#ff-c1)">
+    <rect x="0" y="0" width="360" height="204" fill="var(--fig-panel)"/>
+    <rect x="34" y="62" width="292" height="96" rx="6" fill="var(--fig-key)" stroke="var(--fig-line)"/>
+    <g fill="var(--fig-keyw)" stroke="var(--fig-line)" stroke-width="1">
+      <rect x="42" y="78" width="18" height="72"/><rect x="60" y="78" width="18" height="72"/><rect x="78" y="78" width="18" height="72"/><rect x="96" y="78" width="18" height="72"/><rect x="114" y="78" width="18" height="72"/><rect x="132" y="78" width="18" height="72"/><rect x="150" y="78" width="18" height="72"/><rect x="168" y="78" width="18" height="72"/><rect x="186" y="78" width="18" height="72"/><rect x="204" y="78" width="18" height="72"/><rect x="222" y="78" width="18" height="72"/><rect x="240" y="78" width="18" height="72"/><rect x="258" y="78" width="18" height="72"/><rect x="276" y="78" width="18" height="72"/><rect x="294" y="78" width="18" height="72"/>
+    </g>
+    <g fill="var(--fig-keyb)">
+      <rect x="54" y="78" width="11" height="44"/><rect x="72" y="78" width="11" height="44"/><rect x="108" y="78" width="11" height="44"/><rect x="126" y="78" width="11" height="44"/><rect x="144" y="78" width="11" height="44"/><rect x="180" y="78" width="11" height="44"/><rect x="198" y="78" width="11" height="44"/><rect x="234" y="78" width="11" height="44"/><rect x="252" y="78" width="11" height="44"/><rect x="270" y="78" width="11" height="44"/><rect x="306" y="78" width="11" height="44"/>
+    </g>
+    <g fill="var(--fig-accent)" opacity=".85"><rect x="96" y="128" width="18" height="22"/><rect x="132" y="128" width="18" height="22"/><rect x="168" y="128" width="18" height="22"/></g>
+    <path d="M300 30 q10 -8 20 0 M296 22 q14 -12 28 0" fill="none" stroke="var(--fig-signal)" stroke-width="2" stroke-linecap="round"/>
+    <text x="310" y="50" text-anchor="middle" class="fig-mono" fill="var(--fig-signal)">BLE MIDI</text>
+  </g>
+  <!-- Frame 2: Gabriel at the desk -->
+  <g clip-path="url(#ff-c2)">
+    <rect x="0" y="224" width="360" height="204" fill="var(--fig-panel)"/>
+    <rect x="200" y="246" width="128" height="78" rx="4" fill="var(--fig-key)" stroke="var(--fig-line)"/>
+    <path d="M212 306 l18 -20 l16 12 l22 -26 l20 18 l28 -10" fill="none" stroke="var(--fig-signal)" stroke-width="2"/>
+    <rect x="22" y="246" width="70" height="120" rx="3" fill="var(--fig-key)" stroke="var(--fig-line)"/>
+    <g stroke="var(--fig-line)"><line x1="22" y1="276" x2="92" y2="276"/><line x1="22" y1="306" x2="92" y2="306"/><line x1="22" y1="336" x2="92" y2="336"/></g>
+    <g fill="var(--fig-accent)"><circle cx="32" cy="261" r="3"/><circle cx="32" cy="291" r="3"/><circle cx="32" cy="321" r="3" fill="var(--fig-signal)"/></g>
+    <circle cx="150" cy="300" r="26" fill="var(--fig-figure)"/>
+    <path d="M96 428 q4 -78 54 -84 q50 6 54 84z" fill="var(--fig-figure)"/>
+    <rect x="40" y="376" width="280" height="52" fill="var(--fig-key)" stroke="var(--fig-line)"/>
+    <g stroke="var(--fig-muted)" stroke-width="3" stroke-linecap="round">
+      <line x1="60" y1="388" x2="60" y2="418"/><line x1="76" y1="388" x2="76" y2="418"/><line x1="92" y1="388" x2="92" y2="418"/><line x1="108" y1="388" x2="108" y2="418"/><line x1="252" y1="388" x2="252" y2="418"/><line x1="268" y1="388" x2="268" y2="418"/><line x1="284" y1="388" x2="284" y2="418"/><line x1="300" y1="388" x2="300" y2="418"/>
+    </g>
+    <g fill="var(--fig-accent)"><rect x="55" y="400" width="10" height="5"/><rect x="71" y="394" width="10" height="5"/><rect x="87" y="406" width="10" height="5"/><rect x="103" y="398" width="10" height="5"/><rect x="247" y="396" width="10" height="5"/><rect x="263" y="404" width="10" height="5"/><rect x="279" y="392" width="10" height="5"/><rect x="295" y="400" width="10" height="5"/></g>
+  </g>
+  <!-- Frame 3: the synthesizer's panel -->
+  <g clip-path="url(#ff-c3)">
+    <rect x="0" y="448" width="360" height="204" fill="var(--fig-panel)"/>
+    <rect x="20" y="478" width="320" height="104" rx="6" fill="var(--fig-key)" stroke="var(--fig-line)"/>
+    <g fill="var(--fig-panel)" stroke="var(--fig-muted)" stroke-width="2">
+      <circle cx="56" cy="512" r="13"/><circle cx="100" cy="512" r="13"/><circle cx="144" cy="512" r="13"/><circle cx="188" cy="512" r="13"/><circle cx="276" cy="512" r="13"/><circle cx="320" cy="512" r="13" transform="translate(-6 0)"/>
+      <circle cx="56" cy="556" r="10"/><circle cx="100" cy="556" r="10"/><circle cx="144" cy="556" r="10"/><circle cx="276" cy="556" r="10"/><circle cx="314" cy="556" r="10"/>
+    </g>
+    <g stroke="var(--fig-muted)" stroke-width="2" stroke-linecap="round"><line x1="56" y1="512" x2="56" y2="501"/><line x1="100" y1="512" x2="108" y2="503"/><line x1="144" y1="512" x2="135" y2="503"/><line x1="188" y1="512" x2="197" y2="506"/><line x1="276" y1="512" x2="276" y2="501"/><line x1="314" y1="512" x2="322" y2="504"/></g>
+    <circle cx="232" cy="532" r="20" fill="var(--fig-panel)" stroke="var(--fig-accent)" stroke-width="3"/>
+    <line x1="232" y1="532" x2="218" y2="545" stroke="var(--fig-accent)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M250 508 a30 30 0 0 1 4 40" fill="none" stroke="var(--fig-accent)" stroke-width="2" stroke-dasharray="3 4"/>
+    <path d="M250 552 l4 -6 l3 7z" fill="var(--fig-accent)"/>
+    <text x="232" y="572" text-anchor="middle" class="fig-mono" fill="var(--fig-accent)">DECAY</text>
+    <text x="180" y="606" text-anchor="middle" class="fig-small" fill="var(--fig-muted)">decay down: each chord goes staccato</text>
+  </g>
+  <!-- Labels -->
+  <g class="fig-label">
+    <rect x="10" y="10" width="186" height="26" rx="13" fill="var(--fig-chip)"/><text x="22" y="28" fill="var(--fig-ink)">1 · the keyboard, from above</text>
+    <rect x="10" y="234" width="170" height="26" rx="13" fill="var(--fig-chip)"/><text x="22" y="252" fill="var(--fig-ink)">2 · Gabriel at the desk</text>
+    <rect x="10" y="458" width="212" height="26" rx="13" fill="var(--fig-chip)"/><text x="22" y="476" fill="var(--fig-ink)">3 · the synthesizer's panel</text>
+  </g>
+</svg>

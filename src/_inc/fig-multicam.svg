@@ -1,0 +1,54 @@
+<svg class="fig fig-multicam" viewBox="0 0 400 600" role="img" aria-labelledby="fm-t fm-d">
+  <title id="fm-t">Three old iPhones, one iPad, one Mac: how the three angles were filmed</title>
+  <desc id="fm-d">Three iPhones bought second-hand, two iPhone 12s and an iPhone 13, each running the free Final Cut Camera app, connect wirelessly to an iPad running Final Cut Pro. The iPad shows every angle live, controls each camera and records them in sync; its own camera can be a fourth angle. Each phone also records its own full-quality file, which transfers to the iPad afterwards. The project then moves to Final Cut Pro on the Mac for the edit.</desc>
+  <!-- Phones -->
+  <g>
+    <g transform="translate(28 20)">
+      <rect width="84" height="150" rx="14" fill="var(--fig-key)" stroke="var(--fig-line)" stroke-width="2"/>
+      <rect x="8" y="14" width="68" height="112" rx="4" fill="var(--fig-panel)"/>
+      <circle cx="42" cy="56" r="14" fill="none" stroke="var(--fig-signal)" stroke-width="2"/><circle cx="42" cy="56" r="5" fill="var(--fig-signal)"/>
+      <text x="42" y="98" text-anchor="middle" class="fig-mono" fill="var(--fig-muted)">CAM 1</text>
+      <text x="42" y="172" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">iPhone 12</text>
+    </g>
+    <g transform="translate(158 20)">
+      <rect width="84" height="150" rx="14" fill="var(--fig-key)" stroke="var(--fig-line)" stroke-width="2"/>
+      <rect x="8" y="14" width="68" height="112" rx="4" fill="var(--fig-panel)"/>
+      <circle cx="42" cy="56" r="14" fill="none" stroke="var(--fig-signal)" stroke-width="2"/><circle cx="42" cy="56" r="5" fill="var(--fig-signal)"/>
+      <text x="42" y="98" text-anchor="middle" class="fig-mono" fill="var(--fig-muted)">CAM 2</text>
+      <text x="42" y="172" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">iPhone 12</text>
+    </g>
+    <g transform="translate(288 20)">
+      <rect width="84" height="150" rx="14" fill="var(--fig-key)" stroke="var(--fig-line)" stroke-width="2"/>
+      <rect x="8" y="14" width="68" height="112" rx="4" fill="var(--fig-panel)"/>
+      <circle cx="42" cy="56" r="14" fill="none" stroke="var(--fig-signal)" stroke-width="2"/><circle cx="42" cy="56" r="5" fill="var(--fig-signal)"/>
+      <text x="42" y="98" text-anchor="middle" class="fig-mono" fill="var(--fig-muted)">CAM 3</text>
+      <text x="42" y="172" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">iPhone 13</text>
+    </g>
+    <text x="200" y="214" text-anchor="middle" class="fig-small" fill="var(--fig-muted)">each runs Final Cut Camera, a free app</text>
+  </g>
+  <!-- Wireless links -->
+  <g fill="none" stroke="var(--fig-signal)" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round">
+    <path d="M70 226 C70 260 150 270 170 300"/>
+    <path d="M200 226 L200 300"/>
+    <path d="M330 226 C330 260 250 270 230 300"/>
+  </g>
+  <text x="300" y="276" class="fig-mono" fill="var(--fig-signal)">wireless</text>
+  <!-- iPad -->
+  <g transform="translate(60 304)">
+    <rect width="280" height="186" rx="16" fill="var(--fig-key)" stroke="var(--fig-accent)" stroke-width="2"/>
+    <rect x="14" y="14" width="252" height="158" rx="4" fill="var(--fig-panel)"/>
+    <g class="fig-mono">
+      <rect x="22" y="22" width="114" height="66" fill="var(--fig-chip)"/><text x="79" y="60" text-anchor="middle" fill="var(--fig-ink)">angle 1</text>
+      <rect x="144" y="22" width="114" height="66" fill="var(--fig-chip)"/><text x="201" y="60" text-anchor="middle" fill="var(--fig-ink)">angle 2</text>
+      <rect x="22" y="96" width="114" height="66" fill="var(--fig-chip)"/><text x="79" y="134" text-anchor="middle" fill="var(--fig-ink)">angle 3</text>
+      <rect x="144" y="96" width="114" height="66" fill="none" stroke="var(--fig-muted)" stroke-dasharray="4 4"/><text x="201" y="126" text-anchor="middle" fill="var(--fig-muted)">iPad camera</text><text x="201" y="142" text-anchor="middle" fill="var(--fig-muted)">optional 4th</text>
+    </g>
+    <circle cx="258" cy="30" r="5" fill="var(--fig-rec)"/>
+  </g>
+  <text x="200" y="514" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">Final Cut Pro for iPad: every angle live, in sync</text>
+  <!-- To the Mac -->
+  <path d="M200 524 L200 548" stroke="var(--fig-accent)" stroke-width="2"/>
+  <path d="M194 544 L200 554 L206 544" fill="none" stroke="var(--fig-accent)" stroke-width="2"/>
+  <rect x="72" y="560" width="256" height="36" rx="8" fill="var(--fig-chip)" stroke="var(--fig-accent)"/>
+  <text x="200" y="583" text-anchor="middle" class="fig-small" fill="var(--fig-ink)">Final Cut Pro on the Mac: the edit</text>
+</svg>
