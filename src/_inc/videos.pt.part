@@ -1,0 +1,18 @@
+<div class="videos">
+  <a class="video" href="https://www.youtube.com/@gabrieldacruz_composer">
+    <div class="poster"><svg viewBox="0 0 120 68" aria-hidden="true"><g fill="none" stroke="var(--fig-accent)" stroke-width="2"><rect x="30" y="8" width="60" height="22" rx="2"/><path d="M34 26 l14 -10 l10 6 l12 -9 l16 13"/></g><g fill="var(--fig-signal)"><path d="M24 62 L60 40 L60 44 L28 62z"/></g><g fill="var(--fig-muted)"><circle cx="26" cy="46" r="2.6"/><circle cx="38" cy="42" r="2.6"/><circle cx="50" cy="40" r="2.6"/><circle cx="62" cy="40" r="2.6"/><circle cx="74" cy="40" r="2.6"/><circle cx="86" cy="42" r="2.6"/><circle cx="98" cy="46" r="2.6"/><circle cx="34" cy="54" r="2.6"/><circle cx="48" cy="50" r="2.6"/><circle cx="72" cy="50" r="2.6"/><circle cx="86" cy="54" r="2.6"/></g><circle cx="60" cy="60" r="3.4" fill="var(--fig-accent)"/></svg><span class="play"></span></div>
+    <div class="body"><h3>Separate Ways</h3><p>O riff dos Journey num Behringer Pro-800, um take, três câmaras. Explicado nesta página.</p><span class="go">O canal dele <span class="tbc">link do vídeo a seguir</span></span></div>
+  </a>
+  <a class="video" href="https://www.youtube.com/@gabrieldacruz_composer">
+    <div class="poster"><svg viewBox="0 0 120 68" aria-hidden="true"><g fill="var(--fig-muted)"><circle cx="20" cy="50" r="3"/><circle cx="32" cy="42" r="3"/><circle cx="46" cy="36" r="3"/><circle cx="60" cy="34" r="3"/><circle cx="74" cy="36" r="3"/><circle cx="88" cy="42" r="3"/><circle cx="100" cy="50" r="3"/><circle cx="36" cy="56" r="3"/><circle cx="52" cy="50" r="3"/><circle cx="68" cy="50" r="3"/><circle cx="84" cy="56" r="3"/></g><g fill="var(--fig-accent)"><circle cx="60" cy="18" r="4"/><path d="M60 22 l0 10"  stroke="var(--fig-accent)" stroke-width="2"/><path d="M62 24 l12 -10" stroke="var(--fig-accent)" stroke-width="2"/></g></svg><span class="play"></span></div>
+    <div class="body"><h3>Live and Let Die</h3><p>Tocado por uma orquestra.</p><span class="go">Ver no YouTube</span></div>
+  </a>
+  <a class="video" href="https://www.youtube.com/@gabrieldacruz_composer">
+    <div class="poster"><svg viewBox="0 0 120 68" aria-hidden="true"><g stroke="var(--fig-muted)" stroke-width="1.5"><line x1="8" y1="24" x2="112" y2="24"/><line x1="8" y1="32" x2="112" y2="32"/><line x1="8" y1="40" x2="112" y2="40"/><line x1="8" y1="48" x2="112" y2="48"/></g><g fill="var(--fig-key)" stroke="var(--fig-accent)" stroke-width="1.5"><rect x="28" y="16" width="5" height="40" rx="1"/><rect x="52" y="16" width="5" height="40" rx="1"/><rect x="76" y="16" width="5" height="40" rx="1"/></g><path d="M12 44 q20 -16 40 -4 q20 12 40 -4" fill="none" stroke="var(--fig-signal)" stroke-width="2"/></svg><span class="play"></span></div>
+    <div class="body"><h3>O tema de A-Team</h3><p>O tema de Mike Post, tocado no baixo.</p><span class="go">Ver no YouTube</span></div>
+  </a>
+  <a class="video" href="https://www.youtube.com/@gabrieldacruz_composer">
+    <div class="poster"><svg viewBox="0 0 120 68" aria-hidden="true"><path d="M60 8 l7 15 l16 2 l-12 11 l3 16 l-14 -8 l-14 8 l3 -16 l-12 -11 l16 -2z" fill="none" stroke="var(--fig-accent)" stroke-width="2"/><g stroke="var(--fig-muted)" stroke-width="1"><line x1="8" y1="60" x2="112" y2="60"/><line x1="8" y1="64" x2="112" y2="64"/></g><g fill="var(--fig-signal)"><circle cx="24" cy="60" r="2.2"/><circle cx="40" cy="62" r="2.2"/><circle cx="84" cy="60" r="2.2"/><circle cx="98" cy="62" r="2.2"/></g></svg><span class="play"></span></div>
+    <div class="body"><h3>#MyStargirlScore</h3><p>A sua participação no concurso de banda sonora DC Stargirl.</p><span class="go">Ver no YouTube</span></div>
+  </a>
+</div>

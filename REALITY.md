@@ -9,11 +9,10 @@ A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacru
 - Figures are inline SVG in `src/_inc/`, pulled into pages by `scripts/build.mjs` (`<!--#inc name -->`): three frames of the video, the decay and delay envelope, the Live Multicam setup, the film concert idea. Drawn for this site, CC BY 4.0; no third-party images.
 - Use with AI: `src/llms.txt`, `src/index.md` (the master copy of the facts), `src/agents/index.html` (for people) and `src/agents/{visitor,gabriel,editor,questions}.md`.
 - Two more designs with the same facts: "The Score" (`src/d/score/`) and "The Signal Chain" (`src/d/signal/`), listed in `src/designs.json`, switched from a bar at the top of each.
-- Portuguese page (`src/pt/index.html`): still the earlier first pass, on `src/pt/legacy.css` until it is redone.
+- Portuguese page (`src/pt/index.html`) in "The Studio" design, with Portuguese copies of the figures and lists (`src/_inc/*.pt.*`, made by `scripts/pt-fragments.py`). The other designs and the agent files are English only.
 
 ## Not yet (proposed and approved by Dinis Cruz, 2026-11-16 ~21:40 UTC, relayed by cells@AgentiCCells.dinis)
 
-- Portuguese page in the new design.
 - New screenshots and description for the hub entry (to be sent to hub@AgentiCCells.dinis).
 
 ## Waiting for Gabriel (through Dinis)

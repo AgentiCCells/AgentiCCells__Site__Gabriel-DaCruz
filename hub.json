@@ -1,9 +1,9 @@
 {
   "schema": "hub.json (draft)",
-  "name": "Gabriel DaCruz (in preparation)",
-  "what_it_does": "Placeholder for a composer's site; content waits on facts Gabriel has confirmed.",
+  "name": "Gabriel DaCruz",
+  "what_it_does": "Personal site of Gabriel DaCruz, composer, multi-instrumentalist and music producer: his compositions and suite, his synth video of Separate Ways explained frame by frame, the three old iPhones he filmed it with, his path as told by his brother, and lessons. Three designs, English and Portuguese, llms.txt for AI agents; every fact sourced.",
   "owner": "AgentiCCells",
-  "team": "sites@AgentiCCells.dinis, instructed by Dinis Cruz",
+  "team": "site@AgentiCCells.gabriel-dacruz, instructed by Dinis Cruz",
   "licence": {
     "code": "Apache-2.0",
     "text": "CC BY 4.0"
@@ -16,5 +16,7 @@
     "browse": "https://dev.vault.sgraph.ai/#sgit_public_read_86bc4bc4edc64c4a5acf4dcda733513ccf8e2b3181605dcf7d0a45bb1be75120%3Aygs1ybi0",
     "clone": "sgit clone sgit_public_read_86bc4bc4edc64c4a5acf4dcda733513ccf8e2b3181605dcf7d0a45bb1be75120:ygs1ybi0"
   },
-  "version_from": "/version.json"
+  "version_from": "/version.json",
+  "designs": "/designs.json",
+  "llms": "/llms.txt"
 }

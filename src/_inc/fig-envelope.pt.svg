@@ -1,0 +1,28 @@
+<svg class="fig fig-envelope" viewBox="0 0 480 330" role="img" aria-labelledby="fe-t fe-d">
+  <title id="fe-t">O truque do fim: decay em baixo, e o delay repete o acorde curto</title>
+  <desc id="fe-d">Duas linhas, volume ao longo do tempo. Em cima: com um decay longo, o acorde soa e desvanece devagar. Em baixo: com o decay em baixo, o acorde para quase logo, staccato, e o delay repete-o várias vezes, cada repetição mais suave. Uma ilustração da técnica, não uma medição.</desc>
+  <g class="fig-small" fill="var(--fig-muted)">
+    <text x="0" y="18">Decay longo: cada acorde soa</text>
+    <text x="0" y="178">Decay em baixo: staccato, e o delay repete-o</text>
+  </g>
+  <g stroke="var(--fig-line)" stroke-width="1">
+    <line x1="0" y1="140" x2="480" y2="140"/>
+    <line x1="0" y1="300" x2="480" y2="300"/>
+  </g>
+  <path d="M10 140 L22 40 C60 60 120 90 200 112 C280 130 360 137 470 139 L470 140 Z" fill="var(--fig-accent)" opacity=".28"/>
+  <path d="M10 140 L22 40 C60 60 120 90 200 112 C280 130 360 137 470 139" fill="none" stroke="var(--fig-accent)" stroke-width="2.5"/>
+  <path d="M10 300 L22 200 C28 240 34 280 48 300 Z" fill="var(--fig-accent)"/>
+  <g fill="var(--fig-signal)">
+    <path d="M110 300 L120 222 C125 254 130 284 142 300 Z" opacity=".9"/>
+    <path d="M200 300 L210 240 C214 266 218 288 228 300 Z" opacity=".75"/>
+    <path d="M290 300 L300 256 C303 276 306 292 314 300 Z" opacity=".6"/>
+    <path d="M380 300 L388 270 C390 284 392 294 398 300 Z" opacity=".45"/>
+  </g>
+  <g class="fig-mono">
+    <text x="20" y="196" fill="var(--fig-accent)">acorde</text>
+    <text x="104" y="216" fill="var(--fig-signal)">repete</text>
+    <text x="196" y="234" fill="var(--fig-signal)">repete</text>
+    <text x="284" y="250" fill="var(--fig-signal)">repete</text>
+  </g>
+  <text x="480" y="322" text-anchor="end" class="fig-small" fill="var(--fig-muted)">tempo →</text>
+</svg>
