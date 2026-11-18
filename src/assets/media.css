@@ -58,8 +58,8 @@ dialog.player.vertical .pbox { aspect-ratio: 9 / 16; max-height: 78vh; margin: 0
 /* Film credits: title cards */
 .credits { display: grid; gap: 1rem; grid-template-columns: 1fr; }
 @media (min-width: 52rem) { .credits { grid-template-columns: repeat(3, 1fr); } }
-.tcard { position: relative; aspect-ratio: 2 / 3; max-height: 30rem; border-radius: var(--m-radius); overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.2rem; color: #fff; isolation: isolate; border: 1px solid var(--m-line); }
-@media (max-width: 52rem) { .tcard { aspect-ratio: 16 / 10; } }
+.tcard { position: relative; aspect-ratio: 4 / 3; min-height: 15rem; max-height: 21rem; border-radius: var(--m-radius); overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.2rem; color: #fff; isolation: isolate; border: 1px solid var(--m-line); }
+@media (max-width: 52rem) { .tcard { aspect-ratio: 16 / 9; min-height: 13rem; } }
 .tcard::before { content: ""; position: absolute; inset: 0; z-index: -1; }
 .tcard.bay::before { background: linear-gradient(180deg, #8fc3e6 0%, #3b7fb3 40%, #0d2236 100%); }
 .tcard.war::before { background: radial-gradient(120% 60% at 50% 100%, #c2421c 0%, #3b130b 45%, #0a0705 85%); }
