@@ -23,12 +23,12 @@ A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacru
 ## Material from Gabriel's own site (gabrieldacruz.com, read 2026-11-18)
 
 - Used: his biography (quoted and summarised, his words), the three productions it leads with, his portrait and black-and-white studio photo (his own), his IMDb and Spotify links, the videos and SoundCloud playlists it plays.
-- Not used: the three film posters (the productions' artwork, with actors' faces); the site shows drawn title cards instead, until Gabriel says the posters may be shown. The "22.12.22" under his biography (meaning unclear). His contact form and students page (we keep Instagram for lessons).
+- The three film posters (the productions' artwork) are shown on the film cards since 2026-11-18, with Gabriel's agreement relayed by Dinis Cruz (~01:25 UTC: "Gabriel says yes"), credited to their productions, in `src/assets/posters/`. The "22.12.22" under his biography (meaning unclear). His contact form and students page (we keep Instagram for lessons).
 - Video stills in `src/assets/video/` are frames from his own uploads; the #MyStargirlScore still (series footage) and the two videos on the singer's channel use drawn posters instead.
 
 ## Waiting for Gabriel (through Dinis)
 
-- His role on The Bay, War Flowers and The Gauntlet; whether the posters may be shown.
+- His role on The Bay, War Flowers and The Gauntlet.
 - Whether the guitar lesson photo (Gabriel with a second, young person) may be published: held back until Dinis confirms that person, or a parent, agreed.
 - Everything marked "to confirm" or "as told by Dinis": the band's name and years, the school, the Lisbon concert's name, venue and dates, the award in his Instagram bio, the Spotify album's title and year, who played on each video.
 

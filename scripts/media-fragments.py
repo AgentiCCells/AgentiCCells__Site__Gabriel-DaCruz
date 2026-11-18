@@ -85,14 +85,19 @@ def scl(pt):
     return f'<div class="scl">{a}{b}</div>\n<p class="scnote">{note}<sup class="s"><a href="#s7">7</a></sup></p>'
 
 def films(pt):
-    T = [('bay', 'The Bay', 'TB', ['TB EP20 1M3'], 'Série', 'Series'), ('war', 'War Flowers', 'WF', ['WF 1M25', 'WF 2M14'], 'Filme', 'Film'), ('gauntlet', 'The Gauntlet', 'TG', ['TG 2M1', 'TG 3M3', 'TG 3M10', 'TG 4M1'], 'Filme', 'Film')]
+    # Posters as shown on his own site; Gabriel agreed to their use here (through Dinis, 2026-11-18).
+    T = [('bay', 'The Bay', 'TB', ['TB EP20 1M3'], 'Série', 'Series', 'the-bay', 214, 322),
+         ('war', 'War Flowers', 'WF', ['WF 1M25', 'WF 2M14'], 'Filme', 'Film', 'war-flowers', 464, 600),
+         ('gauntlet', 'The Gauntlet', 'TG', ['TG 2M1', 'TG 3M3', 'TG 3M10', 'TG 4M1'], 'Filme', 'Film', 'the-gauntlet', 530, 776)]
     cards = []
-    for cls, name, ini, cues, kpt, ken in T:
-        c = ('cues no SoundCloud com as iniciais ' if pt else 'cues on his SoundCloud marked ') + ini
-        cards.append(f'<div class="tcard {cls}"><span class="tk">{E(kpt if pt else ken)}</span><span class="tn">{E(name)}</span>'
-                     f'<span class="tc">{E(c)}</span><span class="tcues">' + ''.join(f'<span>{E(q)}</span>' for q in cues) + '</span></div>')
-    note = ('O site dele abre com os cartazes destas três produções. Os seus cues no SoundCloud estão marcados com as iniciais TB, WF e TG, que correspondem aos três títulos; o papel exato em cada uma está <span class="tbc">a confirmar</span>. Os cartazes pertencem às produções, por isso aqui são cartões de título desenhados para este site.' if pt else
-            'His own site leads with the posters of these three productions. His SoundCloud cues carry the initials TB, WF and TG, which match the three titles; his exact role on each is <span class="tbc">to confirm</span>. The posters belong to the productions, so here they are title cards drawn for this site.')
+    for cls, name, ini, cues, kpt, ken, img, w, h in T:
+        alt = (f'Cartaz de {name}' if pt else f'Poster for {name}')
+        c = ('cues no SoundCloud dele: ' if pt else 'his cues on SoundCloud: ') + ini
+        cards.append(f'<figure class="tcard poster {cls}"><img src="/assets/posters/{img}.jpg" width="{w}" height="{h}" alt="{E(alt)}" loading="lazy">'
+                     f'<figcaption><span class="tk">{E(kpt if pt else ken)}</span><span class="tn">{E(name)}</span>'
+                     f'<span class="tc">{E(c)}</span><span class="tcues">' + ''.join(f'<span>{E(q)}</span>' for q in cues) + '</span></figcaption></figure>')
+    note = ('Os cartazes das três produções com que o site dele abre, mostrados aqui com o acordo do Gabriel; pertencem às respetivas produções. Os seus cues no SoundCloud estão marcados com as iniciais TB, WF e TG; o papel exato em cada produção está <span class="tbc">a confirmar</span>.' if pt else
+            'The posters of the three productions his own site opens with, shown here with Gabriel\'s agreement; each belongs to its production. His SoundCloud cues carry the initials TB, WF and TG; his exact role on each is <span class="tbc">to confirm</span>.')
     imdb = '<a class="imdb" href="https://www.imdb.com/name/nm4704147/">IMDb</a>'
     return f'<div class="credits">{"".join(cards)}</div>\n<p class="scnote">{note}<sup class="s"><a href="#s9">9</a></sup> {imdb}</p>'
 

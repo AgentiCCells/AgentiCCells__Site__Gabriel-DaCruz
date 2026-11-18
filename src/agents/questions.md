@@ -4,7 +4,7 @@ What Gabriel's own AI should ask him, one topic at a time, to complete his site.
 
 ## To confirm what the site already says
 
-1. The three productions his site leads with (The Bay, War Flowers, The Gauntlet): his role on each, the years, and whether this site may show their posters.
+1. The three productions his site leads with (The Bay, War Flowers, The Gauntlet): his role on each, and the years. (He agreed on 18 November 2026 that this site may show their posters.)
 2. The Spotify album: its title and year. Is it Suite #3, as SoundCloud names its movements, and why is Lua numbered I. again?
 3. Each YouTube video (Live and Let Die, the A-Team theme, #MyStargirlScore): who played, where, and when.
 4. The band in the Algarve: its name, the years, where it played.

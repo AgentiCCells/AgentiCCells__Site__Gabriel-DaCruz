@@ -178,3 +178,5 @@ footer.site p { margin: .4rem 0; max-width: 56rem; }
 .words-ph img { display: block; width: 100%; height: auto; border-radius: 6px; }
 .quote.big { font-size: clamp(1.6rem, 3.4vw, 2.5rem); border: 0; padding: 0; }
 .quote.big::before { content: "“"; display: block; font: 400 5rem/0.6 var(--display); color: var(--gold); margin-bottom: .6rem; }
+
+@media (max-width: 40rem) { .top .chip[href="/agents/"] { display: none; } .name { font-size: .92rem; letter-spacing: .16em; } }

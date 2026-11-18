@@ -104,3 +104,15 @@ dialog.picker::backdrop { background: rgba(0,0,0,.75); }
 .pick img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
 .pick b { display: block; padding: .55rem .7rem 0; font-size: .95rem; }
 .pick span { display: block; padding: 0 .7rem .6rem; font-size: .76rem; color: #a59c90; }
+
+/* Film posters (Gabriel's agreement, 2026-11-18): the whole poster, uncropped, with its cues beneath */
+.credits:has(.poster) { grid-template-columns: repeat(3, minmax(0, 17rem)); justify-content: start; align-items: start; }
+@media (max-width: 40rem) { .credits:has(.poster) { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 70%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: .5rem; } .credits .poster { scroll-snap-align: start; } }
+.tcard.poster { display: block; aspect-ratio: auto; max-height: none; min-height: 0; margin: 0; padding: 0; background: var(--m-card); color: var(--m-ink); }
+.tcard.poster::before, .tcard.poster::after { display: none; }
+.tcard.poster img { display: block; width: 100%; height: auto; }
+.tcard.poster figcaption { padding: .75rem .85rem .9rem; }
+.tcard.poster .tk { display: block; color: var(--m-accent); opacity: 1; }
+.tcard.poster .tn { display: block; font-size: 1.35rem; margin: .2rem 0 .3rem; text-shadow: none; color: var(--m-ink); }
+.tcard.poster .tc { display: block; font-size: .78rem; color: var(--m-muted); opacity: 1; }
+.tcard.poster .tcues span { background: transparent; border-color: var(--m-line); color: var(--m-ink); }
