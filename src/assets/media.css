@@ -1,6 +1,6 @@
 /* Shared media styles for every design: video rails, the player dialog, SoundCloud and film credits.
    Each design sets the --m-* colours; these are the fallbacks. Owner: site@AgentiCCells.gabriel-dacruz. Code Apache-2.0. */
-:root { --m-bg: #17141c; --m-card: #1e1a24; --m-line: #2f2a37; --m-ink: #f2ece2; --m-muted: #b3aa9e; --m-accent: #e0b56a; --m-accent-ink: #121016; --m-radius: 12px; --m-font: inherit; --m-mono: ui-monospace, Menlo, Consolas, monospace; }
+:where(:root) { --m-bg: #17141c; --m-card: #1e1a24; --m-line: #2f2a37; --m-ink: #f2ece2; --m-muted: #b3aa9e; --m-accent: #e0b56a; --m-accent-ink: #121016; --m-radius: 12px; --m-font: inherit; --m-mono: ui-monospace, Menlo, Consolas, monospace; }
 
 /* Groups of videos */
 .vgroup { margin: 0 0 2.2rem; }

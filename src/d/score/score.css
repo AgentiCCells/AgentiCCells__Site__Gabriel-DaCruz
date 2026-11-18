@@ -94,3 +94,4 @@ blockquote cite { display: block; font: normal .8rem var(--sans); color: var(--i
 .cue-group li { display: flex; justify-content: space-between; gap: 1rem; padding: .35rem 0; border-bottom: 1px solid var(--rule); }
 .cue-group b { font-weight: 400; font-style: italic; }
 .cue-group span { font: .8rem var(--sans); color: var(--ink-2); white-space: nowrap; }
+:root { --m-bg: #f6f1e7; --m-card: #fbf8f2; --m-line: #d8ccb8; --m-ink: #1d1a17; --m-muted: #5a524a; --m-accent: #8c2f39; --m-accent-ink: #fff; --m-font: var(--serif); --m-radius: 2px; }

@@ -99,3 +99,4 @@ sup.s a { color: var(--mark); text-decoration: none; }
 .sources li { margin: .45rem 0; }
 .foot { text-align: center; padding: 2rem 1rem 3rem; font: .76rem var(--sans); color: var(--ink-2); }
 @media (max-width: 40rem) { .subtitle { position: static; transform: none; width: auto; margin: .9rem 1rem 0; background: none; } }
+:root { --m-bg: #f4f1ea; --m-card: #fff; --m-line: #cfc8bb; --m-ink: #161514; --m-muted: #57534d; --m-accent: #c4372b; --m-accent-ink: #fff; --m-radius: 2px; --m-mono: var(--type); }

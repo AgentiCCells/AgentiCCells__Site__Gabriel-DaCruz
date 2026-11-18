@@ -242,3 +242,6 @@ figure.viz.frames .fig { max-width: 20rem; margin: 0 auto; }
 @media (min-width: 56rem) { .gallery .g-wide { grid-column: auto; } }
 .gallery img { display: block; width: 100%; height: auto; border-radius: 10px; }
 .gallery figcaption { font-size: .8rem; color: var(--dim); margin-top: .45rem; }
+
+/* Colours for the shared media styles (assets/media.css) */
+:root { --m-bg: var(--bg); --m-card: var(--panel); --m-line: var(--line); --m-ink: var(--ink); --m-muted: var(--muted); --m-accent: var(--gold); --m-accent-ink: #121016; --m-font: var(--serif); }

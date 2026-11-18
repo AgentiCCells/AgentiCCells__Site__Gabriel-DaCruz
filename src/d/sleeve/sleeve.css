@@ -97,3 +97,4 @@ blockquote cite { display: block; font: normal .78rem var(--sans); color: var(--
 .sources { font: .86rem/1.55 var(--sans); color: var(--muted); padding-left: 1.4rem; margin: 0; }
 .sources li { margin: .45rem 0; }
 .foot { text-align: center; padding: 2.5rem 1rem; font: .76rem var(--sans); color: var(--muted); border-top: 1px solid var(--rule); }
+:root { --m-bg: #0b0a09; --m-card: #14120f; --m-line: #2c2822; --m-ink: #f3ede2; --m-muted: #b9b0a2; --m-accent: #f2cf3a; --m-accent-ink: #000; --m-font: var(--display); --m-radius: 4px; }

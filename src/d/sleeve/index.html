@@ -25,6 +25,7 @@
 <meta name="description" content="Gabriel DaCruz, composer, multi-instrumentalist and music producer, laid out like a record sleeve and its liner notes. The same facts as the home page, each with its source.">
 <link rel="alternate" type="text/markdown" href="/index.md">
 <link rel="stylesheet" href="sleeve.css">
+<link rel="stylesheet" href="/assets/media.css">
 <meta name="theme-color" content="#0b0a09">
 </head>
 <body>
@@ -42,6 +43,8 @@
 <main id="main">
 <section class="side" id="side-a">
   <div class="side-head"><span class="side-letter">A</span><h2>Side A: the music</h2></div>
+  <h3>On screen</h3>
+  <!--#inc films.part -->
   <div class="tracklist">
     <div>
       <h3>A suite in movements</h3>
@@ -58,7 +61,7 @@
   </div>
   <div class="tracklist">
     <div><h3>On record</h3><!--#inc cor.part --></div>
-    <div><h3>On SoundCloud</h3><!--#inc soundcloud.part --></div>
+    <div><h3>On SoundCloud</h3><!--#inc scl.part --></div>
   </div>
   <h3>On video</h3>
   <!--#inc videos.part -->
@@ -87,7 +90,9 @@
 </section>
 
 <section class="side" id="notes">
-  <div class="side-head"><span class="side-letter">✶</span><h2>Liner notes, as told by Dinis</h2></div>
+  <div class="side-head"><span class="side-letter">✶</span><h2>Liner notes: his story</h2></div>
+  <!--#inc bio.part -->
+  <h3 style="margin-top:3rem">As told by Dinis</h3>
   <div class="notes">
     <div class="note-col">
       <p class="dropcap">His brother remembers a band in the Algarve first, Gabriel with Dinis on drums, about twelve gigs a week. Then songs, a music school, a studio built around a Mac Studio, Logic and Pro Tools, and, in Lisbon, an orchestra he put together to play film music live, in time with the films on a screen. He can take a song, write it out for a full orchestra, and then stand in front of that orchestra.<sup class="s"><a href="#s1">1</a></sup></p>
@@ -121,5 +126,6 @@
 </section>
 </main>
 <footer class="foot">Gabriel DaCruz · design "The Sleeve" · version __VERSION__ · <a href="/">home</a> · <a href="/pt/" hreflang="pt" lang="pt">Português</a> · Code Apache-2.0, text and drawings CC BY 4.0, photos Gabriel's own</footer>
+<!--#inc player.part -->
 </body>
 </html>

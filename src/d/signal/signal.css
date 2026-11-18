@@ -109,3 +109,4 @@ sup.s a { color: var(--green); text-decoration: none; }
 .cue-group li { display: flex; justify-content: space-between; gap: 1rem; padding: .3rem 0; border-top: 1px solid var(--edge); }
 .cue-group b { font: 400 .84rem var(--mono); }
 .cue-group span { font: .74rem var(--mono); color: var(--muted); white-space: nowrap; }
+:root { --m-bg: #0d0f0e; --m-card: #0a0b0a; --m-line: #2a302c; --m-ink: #e6e8e3; --m-muted: #9aa39c; --m-accent: #f2a93b; --m-accent-ink: #000; --m-radius: 6px; }
