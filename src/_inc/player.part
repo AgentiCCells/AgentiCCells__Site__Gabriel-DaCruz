@@ -1,0 +1,6 @@
+<dialog id="player" class="player" aria-labelledby="player-t">
+  <div class="phead"><p class="pt" id="player-t">Video</p><button type="button" class="pclose" aria-label="Close the player">×</button></div>
+  <div class="pbox"></div>
+  <p class="pnote">Playing from YouTube (youtube-nocookie.com). <a class="pyt" href="https://www.youtube.com/@gabrieldacruz_composer">Open on YouTube</a></p>
+</dialog>
+<script src="/assets/play.js" defer></script>

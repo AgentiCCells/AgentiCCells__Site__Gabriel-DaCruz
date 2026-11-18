@@ -1,6 +1,7 @@
 <nav class="designs" aria-label="Designs of this page">
-  <a href="/d/">Same facts, five designs:</a>
-  <a href="/">The Studio</a>
+  <a href="/d/">Same facts, six designs:</a>
+  <a href="/">Premiere</a>
+  <a href="/d/studio/">The Studio</a>
   <a href="/d/sleeve/">The Sleeve</a>
   <a href="/d/cues/">The Cue Sheet</a>
   <a href="/d/score/">The Score</a>
