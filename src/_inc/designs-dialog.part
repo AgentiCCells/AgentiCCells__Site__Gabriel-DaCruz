@@ -1,0 +1,11 @@
+<dialog id="designs" class="picker" aria-labelledby="designs-t">
+  <div class="phead"><p class="pt" id="designs-t">Six designs, the same facts</p><button type="button" class="pclose" aria-label="Close">×</button></div>
+  <ul class="pick">
+    <li><a href="/"><img src="/assets/designs/premiere.jpg" width="1280" height="800" alt="" loading="lazy"><b>Premiere</b><span>cinematic, the default</span></a></li>
+    <li><a href="/d/studio/"><img src="/assets/designs/studio.jpg" width="1280" height="800" alt="" loading="lazy"><b>The Studio</b><span>a studio at night</span></a></li>
+    <li><a href="/d/sleeve/"><img src="/assets/designs/sleeve.jpg" width="1280" height="800" alt="" loading="lazy"><b>The Sleeve</b><span>liner notes</span></a></li>
+    <li><a href="/d/cues/"><img src="/assets/designs/cues.jpg" width="1280" height="800" alt="" loading="lazy"><b>The Cue Sheet</b><span>reel by reel</span></a></li>
+    <li><a href="/d/score/"><img src="/assets/designs/score.jpg" width="1280" height="800" alt="" loading="lazy"><b>The Score</b><span>six movements</span></a></li>
+    <li><a href="/d/signal/"><img src="/assets/designs/signal.jpg" width="1280" height="800" alt="" loading="lazy"><b>The Signal Chain</b><span>a patch bay</span></a></li>
+  </ul>
+</dialog>

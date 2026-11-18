@@ -86,3 +86,21 @@ dialog.player.vertical .pbox { aspect-ratio: 9 / 16; max-height: 78vh; margin: 0
 .journey .jy { display: block; font: .7rem var(--m-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--m-accent); }
 .journey b { display: block; font-size: 1.15rem; font-weight: 600; margin: .1rem 0 .2rem; }
 .journey li > span:last-child { display: block; color: var(--m-muted); font-size: .94rem; line-height: 1.55; }
+
+/* Filter chips (built by play.js) */
+.vfilter { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0 0 1.6rem; }
+.vfilter button { font: 600 .82rem var(--m-font, inherit); font-family: inherit; color: var(--m-ink); background: transparent; border: 1px solid var(--m-line); border-radius: 999px; padding: .4rem .9rem; cursor: pointer; }
+.vfilter button:hover { border-color: var(--m-accent); }
+.vfilter button[aria-pressed="true"] { background: var(--m-accent); border-color: var(--m-accent); color: var(--m-accent-ink); }
+.vgroup[hidden] { display: none; }
+
+/* Designs picker dialog */
+dialog.picker { width: min(94vw, 62rem); padding: 0 0 1rem; border: 1px solid #3a3442; border-radius: 14px; background: #0c0b0f; color: #f2ece2; }
+dialog.picker::backdrop { background: rgba(0,0,0,.75); }
+.pick { list-style: none; margin: 0; padding: .4rem 1rem 0; display: grid; gap: .8rem; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 48rem) { .pick { grid-template-columns: repeat(3, 1fr); } }
+.pick a { display: block; color: #f2ece2; text-decoration: none; border: 1px solid #2f2a37; border-radius: 10px; overflow: hidden; background: #16141a; }
+.pick a:hover { border-color: #e0b56a; color: #f2ece2; }
+.pick img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.pick b { display: block; padding: .55rem .7rem 0; font-size: .95rem; }
+.pick span { display: block; padding: 0 .7rem .6rem; font-size: .76rem; color: #a59c90; }

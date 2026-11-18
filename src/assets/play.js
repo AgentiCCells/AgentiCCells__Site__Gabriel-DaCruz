@@ -32,6 +32,35 @@
       f.className = 'sc-frame'; a.replaceWith(f); f.focus();
     }
   });
+  // Filter chips over each set of video groups, built from the group headings (no markup needed).
+  var pt = (d.documentElement.lang || '').indexOf('pt') === 0;
+  d.querySelectorAll('.vids').forEach(function (box) {
+    var groups = box.querySelectorAll('.vgroup');
+    if (groups.length < 2) return;
+    var bar = d.createElement('div'); bar.className = 'vfilter'; bar.setAttribute('role', 'group');
+    bar.setAttribute('aria-label', pt ? 'Filtrar os vídeos' : 'Filter the videos');
+    function chip(label, g) {
+      var b = d.createElement('button'); b.type = 'button'; b.textContent = label;
+      b.setAttribute('aria-pressed', g === 'all' ? 'true' : 'false');
+      b.addEventListener('click', function () {
+        bar.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        groups.forEach(function (x) { x.hidden = !(g === 'all' || x === g); });
+      });
+      bar.appendChild(b);
+    }
+    chip(pt ? 'Todos' : 'All', 'all');
+    groups.forEach(function (g) { var h = g.querySelector('h4'); if (h) chip(h.textContent, g); });
+    box.insertBefore(bar, box.firstChild);
+  });
+  // The designs picker, opened from any link marked data-designs.
+  var dd = d.getElementById('designs');
+  d.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-designs]');
+    if (a && dd && dd.showModal && !e.metaKey && !e.ctrlKey) { e.preventDefault(); opener = a; dd.showModal(); }
+  });
+  if (dd) dd.addEventListener('click', function (e) {
+    if (e.target.closest('.pclose') || e.target === dd) dd.close();
+  });
   if (dlg) {
     dlg.addEventListener('click', function (e) {
       if (e.target.closest('.pclose')) { dlg.close(); return; }

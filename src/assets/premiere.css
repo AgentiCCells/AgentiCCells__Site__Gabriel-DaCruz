@@ -164,3 +164,17 @@ figure.viz figcaption, .cap { font-size: .8rem; color: var(--dim); margin-top: .
 footer.site { background: #000; color: var(--muted); padding: 3rem 0; font-size: .84rem; }
 footer.site .sig { font: 400 1rem var(--display); letter-spacing: .22em; text-transform: uppercase; color: var(--ink); margin: 0 0 1rem; }
 footer.site p { margin: .4rem 0; max-width: 56rem; }
+
+/* From marc-noah: a hero button that plays a film, a portrait beside his words */
+.btn-feature { padding: .55rem 1.3rem .55rem 1rem; }
+.btn-feature span { display: flex; flex-direction: column; line-height: 1.2; }
+.btn-feature small { font-weight: 500; font-size: .74rem; opacity: .8; }
+.hero-or { margin: .9rem 0 0; font-size: .86rem; }
+.hero-or a { color: var(--muted); }
+.hero-or a:hover { color: var(--gold); }
+.words .wrap { display: grid; gap: 2.5rem; grid-template-columns: 1fr; align-items: center; }
+@media (min-width: 58rem) { .words .wrap { grid-template-columns: .8fr 1.2fr; gap: 4rem; } }
+.words-ph { margin: 0; }
+.words-ph img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.quote.big { font-size: clamp(1.6rem, 3.4vw, 2.5rem); border: 0; padding: 0; }
+.quote.big::before { content: "“"; display: block; font: 400 5rem/0.6 var(--display); color: var(--gold); margin-bottom: .6rem; }
