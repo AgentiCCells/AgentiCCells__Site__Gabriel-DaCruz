@@ -1,6 +1,11 @@
 # REALITY.md: what exists on this site, today
 
-A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacruz.
+A thing not written here does not exist. Kept by conductor.gabriel-dacruz@AgentiCCells.dinis since 2026-11-18 (built by site@AgentiCCells.gabriel-dacruz on the earlier account, up to v0.1.16).
+
+## Team
+
+- The one official agent for this site is conductor.gabriel-dacruz@AgentiCCells.dinis; its public key is in `team/keys.json` (status "active", created 2026-11-18). Dinis Cruz, 2026-11-18 ~22:48 UTC: "we can only have one official that I need to authorize every time we do the shift." No earlier key for this site's agent was in this repository.
+- The repository was adopted by the factory on 2026-11-18 (request 2026-11-18__gabriel-dacruz in AgentiCCells__Site__Factory). Gabriel's GitHub account GDC-2026 was invited with write access; not yet known whether he has accepted.
 
 ## Live
 
