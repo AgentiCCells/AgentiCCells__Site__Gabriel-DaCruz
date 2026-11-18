@@ -1,6 +1,6 @@
 # Gabriel DaCruz
 
-> Personal website of Gabriel DaCruz, composer, multi-instrumentalist and music producer. Seven compositions on Patreon, a suite in movements on Spotify and Apple Music, an album he composed and conducted (COR, Live at café Império), themes and film and TV cues on SoundCloud, and videos on YouTube, including a synth video of Journey's Separate Ways filmed with three old iPhones synced live to an iPad, explained on the site frame by frame. His brother, Dinis Cruz, describes him as a composer, arranger, producer, studio technician and conductor. Every fact on this site names its public source and the date it was read; anything marked TO CONFIRM waits for Gabriel.
+> Personal website of Gabriel DaCruz, composer, multi-instrumentalist and music producer: born in Lisbon, trained in Lisbon and London (BMus (Hons) in Composition, London College of Music), working across concert music, film, television, radio and new media, and in the last decade as an Additional Music Composer on major Hollywood film productions (his own biography). His own site leads with The Bay, War Flowers and The Gauntlet. On this site: his film cues and concert works (SoundCloud), his suite, his album COR, and all 18 of his YouTube videos and Shorts, playable in the page, with his synth video of Separate Ways explained frame by frame. Every fact names its public source and the date it was read; anything marked TO CONFIRM waits for Gabriel.
 
 This file is for AI agents and the people using them. Pick the instructions that match who you are acting for, read them in full, then follow them.
 
@@ -15,14 +15,18 @@ If you cannot tell which, use the visitor's instructions: they change nothing.
 ## The content
 
 - [The whole site, as Markdown](https://gabriel-dacruz.agenticcells.site/index.md): his work, the Separate Ways video explained, the three-camera setup, his path as told by Dinis, lessons and sources. The master copy of the facts.
-- [The home page, as HTML](https://gabriel-dacruz.agenticcells.site/), in five designs with the same facts (picker: [/d/](https://gabriel-dacruz.agenticcells.site/d/)): [The Studio](https://gabriel-dacruz.agenticcells.site/), [The Sleeve](https://gabriel-dacruz.agenticcells.site/d/sleeve/), [The Cue Sheet](https://gabriel-dacruz.agenticcells.site/d/cues/), [The Score](https://gabriel-dacruz.agenticcells.site/d/score/), [The Signal Chain](https://gabriel-dacruz.agenticcells.site/d/signal/) (list: [designs.json](https://gabriel-dacruz.agenticcells.site/designs.json)); and [in Portuguese](https://gabriel-dacruz.agenticcells.site/pt/).
-- [Every work](https://gabriel-dacruz.agenticcells.site/works/) and [as data](https://gabriel-dacruz.agenticcells.site/works.json): twenty works, where each lives, what is to confirm.
+- [The home page, as HTML](https://gabriel-dacruz.agenticcells.site/), in six designs with the same facts (picker: [/d/](https://gabriel-dacruz.agenticcells.site/d/)): [Premiere](https://gabriel-dacruz.agenticcells.site/) (default), [The Studio](https://gabriel-dacruz.agenticcells.site/d/studio/), [The Sleeve](https://gabriel-dacruz.agenticcells.site/d/sleeve/), [The Cue Sheet](https://gabriel-dacruz.agenticcells.site/d/cues/), [The Score](https://gabriel-dacruz.agenticcells.site/d/score/), [The Signal Chain](https://gabriel-dacruz.agenticcells.site/d/signal/) (list: [designs.json](https://gabriel-dacruz.agenticcells.site/designs.json)); and [in Portuguese](https://gabriel-dacruz.agenticcells.site/pt/).
+- [Every work](https://gabriel-dacruz.agenticcells.site/works/) and [as data](https://gabriel-dacruz.agenticcells.site/works.json): every work and video, where each lives, what is to confirm.
 - [Status](https://gabriel-dacruz.agenticcells.site/status/): how the site is run and what waits for Gabriel.
 - [Questions for Gabriel](https://gabriel-dacruz.agenticcells.site/agents/questions.md): what his own AI should ask him to complete the site.
 - [The AI agents page](https://gabriel-dacruz.agenticcells.site/agents/): the same instructions, for people.
 - [Version](https://gabriel-dacruz.agenticcells.site/version.json): the deployed version and commit.
 
 ## His sources (public, each read on the date shown)
+
+- [His own site, gabrieldacruz.com](https://gabrieldacruz.com/) (published by Gabriel, read 2026-11-18): his biography in his own words, the three productions, the videos and playlists it plays.
+- [His YouTube channel](https://www.youtube.com/@gabrieldacruz_composer) (read 2026-11-18): 18 videos and Shorts, titles as he gave them.
+- [IMDb](https://www.imdb.com/name/nm4704147/): linked from his site; IMDb does not show pages to automated readers, so nothing here is taken from it.
 
 - [A website for my brother](https://newsroom.sgit.ai/articles/a-website-for-my-brother.md) (newsroom.sgit.ai, 2026-11-01, read 2026-11-16): Dinis's account and Gabriel's public pages.
 - [Separate Ways, explained](https://newsroom.sgit.ai/articles/separate-ways-explained.md) (newsroom.sgit.ai, 2026-11-02, read 2026-11-16): Gabriel's own explanation of his synth video.

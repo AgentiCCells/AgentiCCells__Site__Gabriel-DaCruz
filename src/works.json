@@ -1,226 +1,250 @@
 {
- "about": "Every work of Gabriel DaCruz this site knows of, where it lives, and what is still to confirm. Each work should get a page of its own on this site (the plan in source 1); none has one yet. Read 2026-11-16.",
+ "about": "Every work and video of Gabriel DaCruz this site knows of, where each lives, and what is still to confirm. Each work should get a page of its own (the plan in source 1); none has one yet. Read 2026-11-18.",
+ "sources": "The numbered sources at https://gabriel-dacruz.agenticcells.site/#sources",
  "works": [
   {
+   "group": "His compositions",
+   "title": "Suite #3: I. Intro, II. Sol, III. Mar, IV. Sognando Anita, I. Lua",
+   "kind": "suite in movements",
+   "date": "tracks from 2011",
+   "where": [
+    "Spotify",
+    "Apple Music",
+    "SoundCloud"
+   ],
+   "sources": "1, 7",
+   "to_confirm": "Album title and year on Spotify: to confirm. SoundCloud names Intro and Sognando Anita as the 1st and 4th movements of Suite #3, and has Mar as a piano piece.",
+   "page_on_this_site": null
+  },
+  {
+   "group": "His compositions",
+   "title": "Variations on a theme",
+   "kind": "concert work",
+   "date": "2013",
+   "where": [
+    "SoundCloud"
+   ],
+   "sources": "7",
+   "to_confirm": null,
+   "page_on_this_site": null
+  },
+  {
+   "group": "His compositions",
+   "title": "Tudo Azul",
+   "kind": "theme",
+   "date": "2023",
+   "where": [
+    "SoundCloud",
+    "YouTube"
+   ],
+   "sources": "7, 10",
+   "to_confirm": "Patreon has \"Suite Tudo Azul\" (September 2025): whether it is the same work, to confirm.",
+   "page_on_this_site": null
+  },
+  {
+   "group": "His compositions",
+   "title": "Adeamus Sate",
+   "kind": "theme",
+   "date": "2023",
+   "where": [
+    "SoundCloud",
+    "YouTube"
+   ],
+   "sources": "7, 9, 10",
+   "to_confirm": "Also sung, on the singer's channel. Patreon spells it \"Ademus Sate\" (September 2025).",
+   "page_on_this_site": null
+  },
+  {
+   "group": "His compositions",
+   "title": "Avé Maria",
+   "kind": "original theme, sung",
+   "date": "to confirm",
+   "where": [
+    "YouTube"
+   ],
+   "sources": "9",
+   "to_confirm": "On the singer's own channel; his site plays it.",
+   "page_on_this_site": null
+  },
+  {
+   "group": "His compositions",
    "title": "Amor Para Sempre",
    "kind": "composition",
    "date": "September 2025",
    "where": [
     "Patreon"
    ],
-   "page_on_this_site": null,
-   "source": "https://www.patreon.com/GabrielDaCruz",
-   "to_confirm": null
+   "sources": "4",
+   "to_confirm": null,
+   "page_on_this_site": null
   },
   {
-   "title": "Suite Tudo Azul",
-   "kind": "composition",
-   "date": "September 2025",
-   "where": [
-    "Patreon"
-   ],
-   "page_on_this_site": null,
-   "source": "https://www.patreon.com/GabrielDaCruz",
-   "to_confirm": "SoundCloud has \"Tudo Azul, main theme\" (20 June 2023); whether it is part of the same work: to confirm."
-  },
-  {
-   "title": "Ademus Sate",
-   "kind": "composition",
-   "date": "September 2025",
-   "where": [
-    "Patreon"
-   ],
-   "page_on_this_site": null,
-   "source": "https://www.patreon.com/GabrielDaCruz",
-   "to_confirm": "SoundCloud has \"Adeamus Sate\" (21 May 2023); whether it is the same piece: to confirm."
-  },
-  {
+   "group": "His compositions",
    "title": "Journey",
    "kind": "composition",
    "date": "March 2026",
    "where": [
     "Patreon"
    ],
-   "page_on_this_site": null,
-   "source": "https://www.patreon.com/GabrielDaCruz",
-   "to_confirm": null
+   "sources": "4",
+   "to_confirm": null,
+   "page_on_this_site": null
   },
   {
+   "group": "His compositions",
    "title": "Magic Nocte",
    "kind": "composition",
    "date": "March 2026",
    "where": [
     "Patreon"
    ],
-   "page_on_this_site": null,
-   "source": "https://www.patreon.com/GabrielDaCruz",
-   "to_confirm": null
+   "sources": "4",
+   "to_confirm": null,
+   "page_on_this_site": null
   },
   {
+   "group": "His compositions",
    "title": "Fleur",
    "kind": "composition",
    "date": "March 2026",
    "where": [
     "Patreon"
    ],
-   "page_on_this_site": null,
-   "source": "https://www.patreon.com/GabrielDaCruz",
-   "to_confirm": null
+   "sources": "4",
+   "to_confirm": null,
+   "page_on_this_site": null
   },
   {
+   "group": "His compositions",
    "title": "Amazónia",
    "kind": "composition",
    "date": "March 2026",
    "where": [
     "Patreon"
    ],
-   "page_on_this_site": null,
-   "source": "https://www.patreon.com/GabrielDaCruz",
-   "to_confirm": null
+   "sources": "4",
+   "to_confirm": null,
+   "page_on_this_site": null
   },
   {
-   "title": "The suite: I. Intro, II. Sol, III. Mar, IV. Sognando Anita, I. Lua",
-   "kind": "suite in movements",
-   "date": "to confirm",
-   "where": [
-    "Spotify",
-    "Apple Music"
-   ],
-   "page_on_this_site": null,
-   "source": "https://newsroom.sgit.ai/articles/a-website-for-my-brother.md",
-   "to_confirm": "Album title and year: to confirm."
-  },
-  {
-   "title": "Tudo Azul, main theme",
-   "kind": "theme",
-   "date": "20 June 2023",
-   "where": [
-    "SoundCloud"
-   ],
-   "page_on_this_site": null,
-   "source": "https://soundcloud.com/gabriel-da-cruz",
-   "to_confirm": null
-  },
-  {
-   "title": "Adeamus Sate",
-   "kind": "theme",
-   "date": "21 May 2023",
-   "where": [
-    "SoundCloud"
-   ],
-   "page_on_this_site": null,
-   "source": "https://soundcloud.com/gabriel-da-cruz",
-   "to_confirm": null
-  },
-  {
-   "title": "WF 1M25 Next Morning",
-   "kind": "film cue",
-   "date": "2011",
-   "where": [
-    "SoundCloud"
-   ],
-   "page_on_this_site": null,
-   "source": "https://soundcloud.com/gabriel-da-cruz",
-   "to_confirm": "Which film WF is: to confirm."
-  },
-  {
-   "title": "WF 2M14 Big Finale",
-   "kind": "film cue",
-   "date": "2011",
-   "where": [
-    "SoundCloud"
-   ],
-   "page_on_this_site": null,
-   "source": "https://soundcloud.com/gabriel-da-cruz",
-   "to_confirm": "Which film WF is: to confirm."
-  },
-  {
-   "title": "TB EP20 1M3",
-   "kind": "TV cue",
-   "date": "2011",
-   "where": [
-    "SoundCloud"
-   ],
-   "page_on_this_site": null,
-   "source": "https://soundcloud.com/gabriel-da-cruz",
-   "to_confirm": "Which series TB is: to confirm."
-  },
-  {
-   "title": "TG 3M3 V1.00",
-   "kind": "film cue",
-   "date": "2014",
-   "where": [
-    "SoundCloud"
-   ],
-   "page_on_this_site": null,
-   "source": "https://soundcloud.com/gabriel-da-cruz",
-   "to_confirm": "Which film TG is: to confirm."
-  },
-  {
-   "title": "TG 4M1 V1.03",
-   "kind": "film cue",
-   "date": "2014",
-   "where": [
-    "SoundCloud"
-   ],
-   "page_on_this_site": null,
-   "source": "https://soundcloud.com/gabriel-da-cruz",
-   "to_confirm": "Which film TG is: to confirm."
-  },
-  {
+   "group": "His compositions",
    "title": "COR, Live at café Império",
    "kind": "album, composed and conducted",
    "date": "to confirm",
    "where": [
     "Album"
    ],
-   "page_on_this_site": null,
-   "source": "supplied by Dinis Cruz, 2026-11-16 (the cover of COR)",
-   "to_confirm": "Where and when, the musicians, where to hear it: to confirm."
+   "sources": "8",
+   "to_confirm": "Where and when, the musicians, where to hear it: to confirm.",
+   "page_on_this_site": null
   },
   {
-   "title": "Separate Ways (Journey), synth video",
-   "kind": "video, explained",
+   "group": "For the screen",
+   "title": "War Flowers: WF 1M25 Next Morning, WF 2M14 Big Finale",
+   "kind": "film cues",
+   "date": "2011",
+   "where": [
+    "SoundCloud"
+   ],
+   "sources": "7, 9",
+   "to_confirm": "Initials match the film; his role: to confirm.",
+   "page_on_this_site": null
+  },
+  {
+   "group": "For the screen",
+   "title": "The Gauntlet: TG 2M1, TG 3M3, TG 3M10, TG 4M1",
+   "kind": "film cues",
+   "date": "2014",
+   "where": [
+    "SoundCloud"
+   ],
+   "sources": "7, 9",
+   "to_confirm": "Initials match the film; his role: to confirm.",
+   "page_on_this_site": null
+  },
+  {
+   "group": "For the screen",
+   "title": "The Bay: TB EP20 1M3",
+   "kind": "TV cue",
+   "date": "2011",
+   "where": [
+    "SoundCloud"
+   ],
+   "sources": "7, 9",
+   "to_confirm": "Initials match the series; his role: to confirm.",
+   "page_on_this_site": null
+  },
+  {
+   "group": "For the screen",
+   "title": "#MyStargirlScore",
+   "kind": "scoring competition entry",
+   "date": "to confirm",
+   "where": [
+    "YouTube"
+   ],
+   "sources": "10",
+   "to_confirm": null,
+   "page_on_this_site": null
+  },
+  {
+   "group": "On video",
+   "title": "Separate Ways (Journey), on a Behringer Pro-800",
+   "kind": "synth, three cameras",
    "date": "2026",
    "where": [
     "YouTube"
    ],
-   "page_on_this_site": null,
-   "source": "https://newsroom.sgit.ai/articles/separate-ways-explained.md",
-   "to_confirm": "Direct link: to come."
+   "sources": "2, 10",
+   "to_confirm": "Explained frame by frame on this site.",
+   "page_on_this_site": null
   },
   {
-   "title": "Live and Let Die, played by an orchestra",
-   "kind": "video",
+   "group": "On video",
+   "title": "A-Team Theme (Mike Post), on bass",
+   "kind": "bass",
    "date": "to confirm",
    "where": [
     "YouTube"
    ],
-   "page_on_this_site": null,
-   "source": "https://newsroom.sgit.ai/articles/a-website-for-my-brother.md",
-   "to_confirm": "Who played, where and when: to confirm."
+   "sources": "10",
+   "to_confirm": null,
+   "page_on_this_site": null
   },
   {
-   "title": "The A-Team theme (Mike Post), on bass",
-   "kind": "video",
+   "group": "On video",
+   "title": "Back To The Future; Legends Of The Fall; Gabriel's Oboe; Live And Let Die",
+   "kind": "film music, with players",
    "date": "to confirm",
    "where": [
     "YouTube"
    ],
-   "page_on_this_site": null,
-   "source": "https://newsroom.sgit.ai/articles/a-website-for-my-brother.md",
-   "to_confirm": "Who played, where and when: to confirm."
+   "sources": "10",
+   "to_confirm": "Who played, where and when: to confirm.",
+   "page_on_this_site": null
   },
   {
-   "title": "#MyStargirlScore",
-   "kind": "video, scoring competition entry",
+   "group": "On video",
+   "title": "Star Wars; Cast Away; Palladio; Live And Let Die; James Bond Theme; Skyfall",
+   "kind": "film and concert music, Shorts",
    "date": "to confirm",
    "where": [
     "YouTube"
    ],
-   "page_on_this_site": null,
-   "source": "https://newsroom.sgit.ai/articles/a-website-for-my-brother.md",
-   "to_confirm": "Who played, where and when: to confirm."
+   "sources": "10",
+   "to_confirm": "Who played, where and when: to confirm.",
+   "page_on_this_site": null
+  },
+  {
+   "group": "On video",
+   "title": "Composing: Epic Theme; Late Night Composing; Studio Time",
+   "kind": "in the studio, Shorts",
+   "date": "to confirm",
+   "where": [
+    "YouTube"
+   ],
+   "sources": "10",
+   "to_confirm": null,
+   "page_on_this_site": null
   }
  ]
 }

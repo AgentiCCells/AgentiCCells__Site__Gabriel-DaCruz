@@ -5,7 +5,8 @@ A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacru
 ## Live
 
 - https://gabriel-dacruz.agenticcells.site, deployed from branch `dev` by `.github/workflows/pages.yml`. The version is at `/version.json`.
-- Home page, English (`src/index.html`), design "The Studio". Sections: hero with key figures; 01 Separate Ways, frame by frame; 02 three cameras (Live Multicam); 03 the music (suite, Patreon compositions, videos); 04 his path, as told by Dinis; 05 lessons; 06 photo slots (empty); 07 links; 08 sources.
+- Home page, English (`src/index.html`), design "Premiere" since 2026-11-18 (Dinis Cruz: "really go to town into making my brother website into another level"): his portrait, the three productions as drawn title cards, a cue map, a journey map, all 18 YouTube videos and Shorts and the two SoundCloud playlists click-to-play (`src/assets/play.js`, `src/assets/media.css`), Separate Ways explained, the studio, lessons, the plan, sources. The earlier home page, "The Studio", is at `/d/studio/`.
+- Earlier note on The Studio: Sections: hero with key figures; 01 Separate Ways, frame by frame; 02 three cameras (Live Multicam); 03 the music (suite, Patreon compositions, videos); 04 his path, as told by Dinis; 05 lessons; 06 photo slots (empty); 07 links; 08 sources.
 - Figures are inline SVG in `src/_inc/`, pulled into pages by `scripts/build.mjs` (`<!--#inc name -->`): three frames of the video, the decay and delay envelope, the Live Multicam setup, the film concert idea. Drawn for this site, CC BY 4.0; no third-party images.
 - Use with AI: `src/llms.txt`, `src/index.md` (the master copy of the facts), `src/agents/index.html` (for people) and `src/agents/{visitor,gabriel,editor,questions}.md`.
 - Five designs with the same facts (Dinis Cruz, 2026-11-16, "make these sites have cool 5 designs"): "The Studio" (`/`, default), "The Sleeve" (`/d/sleeve/`), "The Cue Sheet" (`/d/cues/`), "The Score" (`/d/score/`), "The Signal Chain" (`/d/signal/`). Picker with screenshots at `/d/` (`src/assets/designs/*.jpg`, regenerate when a design changes); listed in `src/designs.json`; a bar on each design switches between them.
@@ -19,9 +20,15 @@ A thing not written here does not exist. Kept by site@AgentiCCells.gabriel-dacru
 
 - New screenshots and description for the hub entry (to be sent to hub@AgentiCCells.dinis).
 
+## Material from Gabriel's own site (gabrieldacruz.com, read 2026-11-18)
+
+- Used: his biography (quoted and summarised, his words), the three productions it leads with, his portrait and black-and-white studio photo (his own), his IMDb and Spotify links, the videos and SoundCloud playlists it plays.
+- Not used: the three film posters (the productions' artwork, with actors' faces); the site shows drawn title cards instead, until Gabriel says the posters may be shown. The "22.12.22" under his biography (meaning unclear). His contact form and students page (we keep Instagram for lessons).
+- Video stills in `src/assets/video/` are frames from his own uploads; the #MyStargirlScore still (series footage) and the two videos on the singer's channel use drawn posters instead.
+
 ## Waiting for Gabriel (through Dinis)
 
-- A direct link to the Separate Ways video (the site links his YouTube channel meanwhile).
+- His role on The Bay, War Flowers and The Gauntlet; whether the posters may be shown.
 - Whether the guitar lesson photo (Gabriel with a second, young person) may be published: held back until Dinis confirms that person, or a parent, agreed.
 - Everything marked "to confirm" or "as told by Dinis": the band's name and years, the school, the Lisbon concert's name, venue and dates, the award in his Instagram bio, the Spotify album's title and year, who played on each video.
 

@@ -4,8 +4,8 @@ What Gabriel's own AI should ask him, one topic at a time, to complete his site.
 
 ## To confirm what the site already says
 
-1. The Separate Ways video: a direct link, and whether he is happy for the site to embed it.
-2. The Spotify album: its title, its year, and a link. Why are the tracks numbered as movements, with Lua as I. again?
+1. The three productions his site leads with (The Bay, War Flowers, The Gauntlet): his role on each, the years, and whether this site may show their posters.
+2. The Spotify album: its title and year. Is it Suite #3, as SoundCloud names its movements, and why is Lua numbered I. again?
 3. Each YouTube video (Live and Let Die, the A-Team theme, #MyStargirlScore): who played, where, and when.
 4. The band in the Algarve: its name, the years, where it played.
 5. The music school: its name, where, when, and what was taught.

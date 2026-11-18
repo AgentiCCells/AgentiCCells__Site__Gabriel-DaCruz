@@ -1,41 +1,66 @@
 {
- "about": "The same site, the same facts and sources, in five designs. The master copy of the facts is /index.md; the picker is /d/.",
- "default": "studio",
+ "about": "The same site, the same facts and sources, in six designs. Premiere is the home page. The master copy of the facts is /index.md; the picker is /d/.",
+ "default": "premiere",
  "designs": [
+  {
+   "slug": "premiere",
+   "name": "Premiere",
+   "path": "/",
+   "url": "https://gabriel-dacruz.agenticcells.site/",
+   "idea": "Cinematic: his portrait out of the dark, his films, then every video and playlist, playable in the page.",
+   "default": true,
+   "preview": "https://gabriel-dacruz.agenticcells.site/assets/designs/premiere.jpg",
+   "share_card": "https://gabriel-dacruz.agenticcells.site/assets/share/premiere-1200x630.jpg"
+  },
   {
    "slug": "studio",
    "name": "The Studio",
-   "tagline": "A studio at night: his work first, each section explained with a drawing. The default.",
-   "path": "/",
-   "thumb": "/assets/designs/studio.jpg"
+   "path": "/d/studio/",
+   "url": "https://gabriel-dacruz.agenticcells.site/d/studio/",
+   "idea": "A studio at night: his work first, each section explained with a drawing.",
+   "default": false,
+   "preview": "https://gabriel-dacruz.agenticcells.site/assets/designs/studio.jpg",
+   "share_card": "https://gabriel-dacruz.agenticcells.site/assets/share/studio-1200x630.jpg"
   },
   {
    "slug": "sleeve",
    "name": "The Sleeve",
-   "tagline": "A record sleeve and liner notes, after the look of his COR cover: Side A the music, Side B how it was made.",
    "path": "/d/sleeve/",
-   "thumb": "/assets/designs/sleeve.jpg"
+   "url": "https://gabriel-dacruz.agenticcells.site/d/sleeve/",
+   "idea": "A record sleeve and liner notes, after the look of his COR cover: Side A the music, Side B how it was made.",
+   "default": false,
+   "preview": "https://gabriel-dacruz.agenticcells.site/assets/designs/sleeve.jpg",
+   "share_card": "https://gabriel-dacruz.agenticcells.site/assets/share/sleeve-1200x630.jpg"
   },
   {
    "slug": "cues",
    "name": "The Cue Sheet",
-   "tagline": "A film composer's cue sheet: a letterboxed frame, reel by reel, with his own film and TV cues.",
    "path": "/d/cues/",
-   "thumb": "/assets/designs/cues.jpg"
+   "url": "https://gabriel-dacruz.agenticcells.site/d/cues/",
+   "idea": "A film composer's cue sheet: a letterboxed frame, reel by reel, with his own film and TV cues.",
+   "default": false,
+   "preview": "https://gabriel-dacruz.agenticcells.site/assets/designs/cues.jpg",
+   "share_card": "https://gabriel-dacruz.agenticcells.site/assets/share/cues-1200x630.jpg"
   },
   {
    "slug": "score",
    "name": "The Score",
-   "tagline": "A printed score in six movements: paper, ink and oxblood, figures as plates.",
    "path": "/d/score/",
-   "thumb": "/assets/designs/score.jpg"
+   "url": "https://gabriel-dacruz.agenticcells.site/d/score/",
+   "idea": "A printed score in six movements: paper, ink and oxblood, figures as plates.",
+   "default": false,
+   "preview": "https://gabriel-dacruz.agenticcells.site/assets/designs/score.jpg",
+   "share_card": "https://gabriel-dacruz.agenticcells.site/assets/share/score-1200x630.jpg"
   },
   {
    "slug": "signal",
    "name": "The Signal Chain",
-   "tagline": "A studio rack and patch bay, from input to output: LEDs and monospace labels.",
    "path": "/d/signal/",
-   "thumb": "/assets/designs/signal.jpg"
+   "url": "https://gabriel-dacruz.agenticcells.site/d/signal/",
+   "idea": "A studio rack and patch bay, from input to output: LEDs and monospace labels.",
+   "default": false,
+   "preview": "https://gabriel-dacruz.agenticcells.site/assets/designs/signal.jpg",
+   "share_card": "https://gabriel-dacruz.agenticcells.site/assets/share/signal-1200x630.jpg"
   }
  ]
 }

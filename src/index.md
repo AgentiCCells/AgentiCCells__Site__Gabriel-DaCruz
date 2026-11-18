@@ -1,11 +1,27 @@
 # Gabriel DaCruz: composer, multi-instrumentalist and music producer
 
-> Gabriel DaCruz is a composer, multi-instrumentalist and music producer (his own description, on Instagram). His brother, Dinis Cruz, describes him as a composer, arranger, producer, studio technician and conductor, who in Lisbon put together an orchestra to play film music live, in time with the films on a screen. His work online: seven compositions on Patreon, a suite in movements on Spotify and Apple Music, an album he composed and conducted (COR, Live at café Império), themes and film and TV cues on SoundCloud, and videos on YouTube, including a synth video of Journey's Separate Ways filmed with three old iPhones. Every fact here names its source. Anything marked TO CONFIRM or "as told by Dinis" waits for Gabriel's own word.
+> Gabriel DaCruz is a composer, multi-instrumentalist and music producer, born in Lisbon and trained in Lisbon and London (BMus (Hons) in Composition, London College of Music), who works across concert music, film, television, radio and new media and, in the last decade, as an Additional Music Composer on major Hollywood film productions (his own biography, on gabrieldacruz.com). His own site leads with three productions: The Bay, War Flowers and The Gauntlet. His work online: film cues and concert works on SoundCloud, a suite in movements on Spotify, seven compositions on Patreon, the album COR (composed and conducted), and 18 videos and Shorts on YouTube. Every fact here names its source. Anything marked TO CONFIRM or "as told by Dinis" waits for Gabriel's own word.
 
 This file is the master copy of the facts on https://gabriel-dacruz.agenticcells.site/ (version __VERSION__). The HTML designs show the same facts. For instructions for AI agents, see [llms.txt](https://gabriel-dacruz.agenticcells.site/llms.txt).
 
+## His story, in his own words
+
+From the biography on his own site, gabrieldacruz.com, read 18 November 2026. [9]
+
+- **Lisbon:** born there; discovered music early, studying at the Instituto Gregoriano de Lisboa.
+- **The Algarve, mid-1980s:** his family moved there, and he began formal lessons in guitar and composition. (Later, as Dinis tells it, a band with his brother on drums, about twelve gigs a week. [1])
+- **London, mid-1990s:** advanced studies at the Musicians Institute, a BTEC in Popular Music at City and Islington College, and a BMus (Hons) in Composition at the London College of Music.
+- **A career:** "a versatile career as a composer, working across a wide range of genres and mediums, including concert music, film, television, radio, and new media."
+- **The last decade:** "an Additional Music Composer on major Hollywood film productions."
+
+## On screen
+
+His own site leads with the posters of three productions: The Bay (a series), War Flowers and The Gauntlet (films). [9] His SoundCloud cues carry the initials TB, WF and TG, which match the three titles: TB EP20 1M3; WF 1M25 Next Morning, WF 2M14 Big Finale; TG 2M1, TG 3M3, TG 3M10, TG 4M1 (the number before M is the reel, the number after it the cue). [7] His exact role on each production: TO CONFIRM. IMDb: https://www.imdb.com/name/nm4704147/
+
 ## Key figures
 
+- **3** productions his own site leads with: The Bay, War Flowers, The Gauntlet. [9]
+- **18** videos and Shorts on his YouTube channel. [10]
 - **7** compositions on Patreon, in September 2025 and March 2026. [4]
 - **5** tracks in a suite of numbered movements, on Spotify. [1]
 - **3** cameras, one take, no crew: two iPhone 12s and an iPhone 13. [3]
@@ -32,7 +48,7 @@ The signal chain: [2]
 
 **What the checking corrected** (he flagged both himself: "They used that Prophet 5, I think. I have to check that out."): the album's credits list a Roland Jupiter-8 for the opening track, not a Prophet-5; and the Pro-800 copies the Prophet-600, a later and cheaper Sequential instrument than the Prophet-5. [2]
 
-The video is on his YouTube channel, https://www.youtube.com/@gabrieldacruz_composer. A direct link: TO CONFIRM.
+The video: https://www.youtube.com/shorts/HM1fslJnusk [10]
 
 ## One player, three old iPhones, no crew
 
@@ -48,9 +64,9 @@ The three frames are one take. He bought two iPhone 12s and an iPhone 13 second-
 
 ## The music
 
-### A suite in movements, on Spotify
+### Suite #3, on Spotify
 
-Tracks as numbered on his Spotify album: I. Intro, II. Sol, III. Mar, IV. Sognando Anita, I. Lua. Also on Apple Music, under his name. The album's title and year: TO CONFIRM. [1]
+Tracks as numbered on his Spotify album: I. Intro, II. Sol, III. Mar, IV. Sognando Anita, I. Lua. Also on Apple Music, under his name. On SoundCloud, Intro and Sognando Anita are named as the 1st and 4th movements of Suite #3. The album's title and year: TO CONFIRM. [1] [7] Spotify: https://open.spotify.com/artist/5vWGVYF9uhIHZYLPfjTWJt
 
 ### Seven compositions, on Patreon
 
@@ -63,22 +79,24 @@ At https://www.patreon.com/GabrielDaCruz. [4]
 
 An album whose cover reads "Music composed and conducted by Gabriel DaCruz". Where and when it was recorded, the musicians, and where to hear it: TO CONFIRM. [8]
 
-### On SoundCloud: themes and film cues
+### On SoundCloud: film cues and concert works
 
-At https://soundcloud.com/gabriel-da-cruz, as listed on 16 November 2026: [7]
+The two playlists his own site plays, as listed on 18 November 2026: [7] [9]
 
-- Themes, 2023: Tudo Azul, main theme (20 June 2023); Adeamus Sate (21 May 2023).
-- A playlist called Media, of film and TV cues: WF 1M25 Next Morning (film score, 2011), WF 2M14 Big Finale (film score, 2011), TB EP20 1M3 (TV, 2011), TG 3M3 V1.00 (film score, 2014), TG 4M1 V1.03 (film score, 2014).
-- "1M25" is how film music names a cue: reel 1, music cue 25. Which films and series WF, TG and TB stand for: TO CONFIRM.
+- **Film** (https://soundcloud.com/gabriel-da-cruz/sets/wf): WF 2M14 Big Finale (2011), WF 1M25 Next Morning (2011), TG 2M1 V1.00 (2014), TG 4M1 V1.03 (2014), TG 3M10 V1.02 (2014), and four tracks SoundCloud does not show publicly.
+- **Works** (https://soundcloud.com/gabriel-da-cruz/sets/works): Suite #3, 4th movement, Sognando Anita (2011, tagged operetta); Mar (2011, piano); Suite #3, 1st movement, Intro (2011); Variations on a theme (2013).
+- Also on his SoundCloud: Tudo Azul, main theme (20 June 2023); Adeamus Sate (21 May 2023); a playlist called Media with TB EP20 1M3 (TV, 2011) and TG 3M3 (2014).
 
-### On video (his YouTube channel)
+### On video
 
-- **Separate Ways:** Journey's riff on a Behringer Pro-800, one take, three cameras (explained above). [2]
-- **Live and Let Die:** played by an orchestra. [1]
-- **The A-Team theme:** Mike Post's theme, played on bass. [1]
-- **#MyStargirlScore:** his entry to the DC Stargirl scoring competition. [1]
+His YouTube channel, @gabrieldacruz_composer, read 18 November 2026; titles as he gave them. [10] Every one plays on this site.
 
-Who played, where and when: TO CONFIRM for each video. [5]
+- **His own music:** Tudo Azul (https://www.youtube.com/shorts/rivD-YULfXw); Adeamus Sate (https://www.youtube.com/shorts/1LyqwT7acl8); Composing: Epic Theme (https://www.youtube.com/shorts/ySRlos-Gp40); Late Night Composing (https://www.youtube.com/shorts/pBpB-GJ3hbg); Studio Time (https://www.youtube.com/shorts/gH_dIqt7M4c).
+- **His themes, sung**, on the singer's own channel, played on his site: Avé Maria (https://www.youtube.com/watch?v=7G__viPsJKc) and Adeamus Sate (https://www.youtube.com/watch?v=dtPpb1t8ILA), each titled "Original Theme by Composer and Maestro Gabriel DaCruz". [9]
+- **Film and concert music, with players:** Back To The Future, Alan Silvestri (https://www.youtube.com/watch?v=PQUijA_qB-U); Legends Of The Fall, James Horner (https://www.youtube.com/watch?v=_qzkIR4og1Q); Gabriel's Oboe (https://www.youtube.com/watch?v=_9RTtTHjrC8); Live And Let Die, played by an orchestra (https://www.youtube.com/watch?v=EbaH_Nekjzs); Star Wars, string orchestra (https://www.youtube.com/shorts/1cDfGj1j4YQ); Cast Away, Alan Silvestri (https://www.youtube.com/shorts/Yl6q7b2GHQk); Palladio, Karl Jenkins (https://www.youtube.com/shorts/7e1Ai5RMVPw); Live And Let Die, James Bond (https://www.youtube.com/shorts/4Qn26tSNEN0); James Bond Theme (https://www.youtube.com/shorts/dOWbZQo_psg); Skyfall (https://www.youtube.com/shorts/i0P3lExj_A8).
+- **Synth and bass:** Separate Ways, Journey (https://www.youtube.com/shorts/HM1fslJnusk); A-Team Theme, Mike Post, on bass (https://www.youtube.com/shorts/9mHskorwbZg); #MyStargirlScore, his entry to the DC Stargirl scoring competition (https://www.youtube.com/watch?v=-b0V2kDIiFo).
+
+Who played, where and when: TO CONFIRM for each video.
 
 ## His path, as told by Dinis
 
@@ -99,21 +117,24 @@ On Instagram, Gabriel invites messages about lessons: https://www.instagram.com/
 
 ## Photos
 
-Gabriel's own photos, supplied by Dinis Cruz on 16 November 2026: Gabriel in his studio with a bass, at the studio desk, a portrait, and the cover of COR. The photos stay his; ask before reusing them. [8]
+Gabriel's own photos: a portrait and a studio panorama from his own site [9], and, supplied by Dinis Cruz on 16 November 2026, Gabriel in his studio with a bass, at the studio desk, a portrait, and the cover of COR. The photos stay his; ask before reusing them. [8]
 
 ## Where to find him
 
 - Instagram: https://www.instagram.com/gabrieldacruz_composer/
 - YouTube: https://www.youtube.com/@gabrieldacruz_composer
 - Patreon: https://www.patreon.com/GabrielDaCruz
+- Spotify: https://open.spotify.com/artist/5vWGVYF9uhIHZYLPfjTWJt
+- IMDb: https://www.imdb.com/name/nm4704147/
+- His own site: https://gabrieldacruz.com/
 - SoundCloud: https://soundcloud.com/gabriel-da-cruz
-- Also on Spotify and Apple Music, as Gabriel DaCruz.
+- Also on Apple Music, as Gabriel DaCruz.
 
 ## How this site grows (plan)
 
 The plan in Dinis's brief for this site, not yet running: own the masters, project everything else. A master Gabriel controls (the recording, video or score at full quality, in storage of his own); a page on this site for every work (the player, the story, the credits, the score); and a copy made for each platform (YouTube, Instagram, Spotify and Apple Music, SoundCloud, Patreon), each linking back to the work's page. Also in the plan: everything he owns uploaded raw and listed; one interview question a day by voice memo, turned into a post he confirms; a weekly brief. [1]
 
-- Every work this site knows of (twenty on 16 November 2026), and where each lives: https://gabriel-dacruz.agenticcells.site/works/ (as data: https://gabriel-dacruz.agenticcells.site/works.json). None has its own page yet.
+- Every work this site knows of and where each lives: https://gabriel-dacruz.agenticcells.site/works/ (as data: https://gabriel-dacruz.agenticcells.site/works.json). None has its own page yet.
 - How the site is run, and what waits for Gabriel: https://gabriel-dacruz.agenticcells.site/status/
 
 ## Sources
@@ -124,8 +145,10 @@ The plan in Dinis's brief for this site, not yet running: own the masters, proje
 4. [His Patreon](https://www.patreon.com/GabrielDaCruz), as recorded in source 1.
 5. [His YouTube channel](https://www.youtube.com/@gabrieldacruz_composer), as recorded in sources 1 and 2.
 6. [His Instagram](https://www.instagram.com/gabrieldacruz_composer/), as recorded in source 1.
-7. [His SoundCloud](https://soundcloud.com/gabriel-da-cruz): the 2023 themes and the Media playlist of cues, with the dates and tags shown there. Read 16 November 2026.
+7. [His SoundCloud](https://soundcloud.com/gabriel-da-cruz): the Film and Works playlists, the 2023 themes and the Media playlist, with the dates and tags shown there. Read 16 and 18 November 2026.
 8. Photos and the cover of COR, supplied by Dinis Cruz for this site on 16 November 2026.
+9. [His own site, gabrieldacruz.com](https://gabrieldacruz.com/), published by Gabriel: biography, the three productions, the videos and playlists it plays, the portrait and the studio photo. Read 18 November 2026.
+10. [His YouTube channel](https://www.youtube.com/@gabrieldacruz_composer): videos and Shorts with his titles. Read 18 November 2026.
 
 ## How this site is made
 
