@@ -34,4 +34,15 @@ expect_err "no exemption by author or committer name" "No principal matched"
 reset; python3 -c 'import json; d=json.load(open("team/keys.json")); d[0]["status"]="revoked"; json.dump(d,open("team/keys.json","w"))'; git add -A; git -c user.signingkey="$t/good" commit -q -S -m revoke
 echo e > f; git add f; git -c user.signingkey="$t/good" commit -q -S -m after-revoke
 expect_err "a commit after its key is revoked fails" "lists no active or superseded key"
+reset; git checkout -q --orphan stray; git -c user.signingkey="$t/good" commit -q -S -m orphan; o="$(git rev-parse HEAD)"
+git checkout -q dev; git -c user.signingkey="$t/good" merge -q -S --allow-unrelated-histories -m "merge orphan" "$o" 2>/dev/null
+expect_err "an orphan commit is refused" "orphan commit"
+git branch -q -D stray
+reset; mkdir -p scripts; cp "$here/scripts/check-signatures.mjs" scripts/; git add -A; git -c user.signingkey="$t/good" commit -q -S -m "add checker"
+trusted="$(git rev-parse HEAD)"; echo "process.exit(0)" > scripts/check-signatures.mjs; echo f > f; git add -A; git commit -q -m "weaken checker, unsigned"
+if node scripts/check-signatures.mjs "$trusted" HEAD >/dev/null 2>&1; then echo "     (the pushed tree's own checker would pass this commit)"; fi
+git show "$trusted:scripts/check-signatures.mjs" > "$t/trusted.mjs"
+if out=$(node "$t/trusted.mjs" "$trusted" HEAD 2>&1); then echo "FAIL the trusted copy refuses a commit that weakens the checker: passed"; fail=$((fail+1));
+elif grep -q "not signed" <<<"$out"; then echo "ok   the trusted copy refuses a commit that weakens the checker (not signed)"; pass=$((pass+1));
+else echo "FAIL the trusted copy refuses a commit that weakens the checker: wrong reason: $out"; fail=$((fail+1)); fi
 echo "$pass passed, $fail failed"; [ "$fail" -eq 0 ]

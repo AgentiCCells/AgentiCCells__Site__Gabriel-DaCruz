@@ -2,6 +2,7 @@
 // team/keys.json (status "active" or "superseded"), never the commit's own, so a commit cannot admit the key that
 // signs it. No commit is exempt by author or committer name. Rule from Dinis Cruz, 2026-11-19 ~01:10 UTC: every commit is signed by the
 // key of the agent that maintains the repository. Commits up to and including BASELINE were made before the rule.
+// Run it from the trusted base's copy, never the pushed tree's (CI and release.sh take it with git show).
 // Usage: node scripts/check-signatures.mjs [before] [after]   (no arguments: every commit after the baseline on HEAD)
 import { execFileSync } from 'node:child_process';
 import { readFileSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
@@ -26,6 +27,9 @@ function sshKey(pem) {
 const dir = mkdtempSync(join(tmpdir(), 'signers-'));
 // The allowed signers file for a commit, built from its first parent's team/keys.json.
 function signersFor(sha) {
+  // An orphan commit (no parent) has no parent keys to trust, so it is refused.
+  const parents = execFileSync('git', ['rev-list', '--parents', '-n', '1', sha], { encoding: 'utf8' }).trim().split(' ').slice(1);
+  if (!parents.length) throw new Error('orphan commit: it has no parent, so no parent keys to trust');
   let keys;
   try { keys = JSON.parse(execFileSync('git', ['show', `${sha}^1:team/keys.json`], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] })); }
   catch { throw new Error('its parent has no readable team/keys.json'); }

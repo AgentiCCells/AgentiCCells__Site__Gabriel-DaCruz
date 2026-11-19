@@ -7,7 +7,9 @@ node scripts/validate.mjs
 node scripts/smoke.mjs
 git fetch -q origin dev
 scripts/test-signatures.sh
-node scripts/check-signatures.mjs origin/dev HEAD
+# The checker comes from origin/dev (the trusted base), never from the tree being released.
+trusted="$(mktemp --suffix=.mjs)"; git show origin/dev:scripts/check-signatures.mjs > "$trusted"
+node "$trusted" origin/dev HEAD; rm -f "$trusted"
 node scripts/leak-scan.mjs
 for i in 1 2 3 4 5; do
   git fetch -q origin dev

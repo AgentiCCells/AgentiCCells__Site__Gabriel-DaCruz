@@ -40,7 +40,17 @@ jobs:
         env:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
-        run: node scripts/check-signatures.mjs "$BEFORE" "$AFTER"
+        # The checker comes from the trusted base (the commit before this push, else the last release tag),
+        # never from the pushed tree, so a push cannot weaken the check that judges it.
+        run: |
+          base="$BEFORE"
+          if [ -z "$base" ] || ! git cat-file -e "$base:scripts/check-signatures.mjs" 2>/dev/null; then
+            base=$(for t in $(git tag --list "v${VERSION_BASE}.*" | sort -V -r); do git cat-file -e "$t:scripts/check-signatures.mjs" 2>/dev/null && { echo "$t"; break; }; done)
+          fi
+          [ -n "$base" ] || { echo "no trusted copy of the signature check"; exit 1; }
+          echo "Signature check taken from $base"
+          git show "$base:scripts/check-signatures.mjs" > "$RUNNER_TEMP/check-signatures.mjs"
+          node "$RUNNER_TEMP/check-signatures.mjs" "$BEFORE" "$AFTER"
       - name: The signature check refuses what it should, for the right reason
         run: scripts/test-signatures.sh
       - run: node scripts/build.mjs
