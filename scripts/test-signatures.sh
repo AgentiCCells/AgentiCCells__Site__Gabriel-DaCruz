@@ -43,6 +43,10 @@ trusted="$(git rev-parse HEAD)"; echo "process.exit(0)" > scripts/check-signatur
 if node scripts/check-signatures.mjs "$trusted" HEAD >/dev/null 2>&1; then echo "     (the pushed tree's own checker would pass this commit)"; fi
 git show "$trusted:scripts/check-signatures.mjs" > "$t/trusted.mjs"
 if out=$(node "$t/trusted.mjs" "$trusted" HEAD 2>&1); then echo "FAIL the trusted copy refuses a commit that weakens the checker: passed"; fail=$((fail+1));
-elif grep -q "not signed" <<<"$out"; then echo "ok   the trusted copy refuses a commit that weakens the checker (not signed)"; pass=$((pass+1));
+elif grep -q "not signed" <<<"$out"; then echo "ok   a push that weakens the checker, with an unsigned commit, still fails (not signed)"; pass=$((pass+1));
 else echo "FAIL the trusted copy refuses a commit that weakens the checker: wrong reason: $out"; fail=$((fail+1)); fi
+git clone -q --depth 1 "file://$r" "$t/shallow"; git -C "$t/shallow" config gpg.ssh.program ssh-keygen
+if out=$(cd "$t/shallow" && node "$here/scripts/check-signatures.mjs" "$SIG_BASELINE" HEAD 2>&1); then echo "FAIL a shallow checkout is refused: passed"; fail=$((fail+1));
+elif grep -q "shallow checkout" <<<"$out"; then echo "ok   a shallow checkout is refused (shallow checkout)"; pass=$((pass+1));
+else echo "FAIL a shallow checkout is refused: wrong reason: $out"; fail=$((fail+1)); fi
 echo "$pass passed, $fail failed"; [ "$fail" -eq 0 ]

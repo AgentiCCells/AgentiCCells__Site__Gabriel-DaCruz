@@ -24,6 +24,10 @@ function sshKey(pem) {
   return `ecdsa-sha2-nistp256 ${blob.toString('base64')}`;
 }
 
+// A shallow checkout hides history (parents, keys), so the check refuses to run in one. CI uses fetch-depth 0.
+if (execFileSync('git', ['rev-parse', '--is-shallow-repository'], { encoding: 'utf8' }).trim() !== 'false') {
+  console.error('shallow checkout: the signature check needs full history (fetch-depth 0)'); process.exit(1);
+}
 const dir = mkdtempSync(join(tmpdir(), 'signers-'));
 // The allowed signers file for a commit, built from its first parent's team/keys.json.
 function signersFor(sha) {
