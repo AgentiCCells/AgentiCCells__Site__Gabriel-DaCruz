@@ -66,20 +66,27 @@ import re, sys
 m = re.search(r'id: trusted.*?run: \|\n(.*?)\n      - name', open(sys.argv[1]).read(), re.S)
 print('\n'.join(l[10:] for l in m.group(1).split('\n')))
 PY
-step() { ( export EVENT="$1" BEFORE="$2" REF="$3" GITHUB_SHA="$(git rev-parse HEAD)" RUNNER_TEMP="$t/rt" GITHUB_OUTPUT=/dev/null VERSION_BASE=0.1; rm -rf "$t/rt"; mkdir -p "$t/rt"; bash -e "$t/step.sh" 2>&1 ); }
-expect_step_err() { if out=$(step "$2" "$3" "$4"); then echo "FAIL $1: passed"; fail=$((fail+1)); elif grep -q "$5" <<<"$out"; then echo "ok   $1 ($5)"; pass=$((pass+1)); else echo "FAIL $1: wrong reason: $out"; fail=$((fail+1)); fi; }
-reset; git tag v0.1.0; mkdir -p scripts; for f in check-signatures.mjs check-commits.mjs leak-scan.mjs; do cp "$here/scripts/$f" scripts/; done
-git add -A; git -c user.signingkey="$t/good" commit -q -S -m "add checks"; withchecks="$(git rev-parse HEAD)"
+step() { ( export ANCHOR="$1" REF="$2" GITHUB_SHA="$(git rev-parse HEAD)" RUNNER_TEMP="$t/rt" GITHUB_OUTPUT=/dev/null; rm -rf "$t/rt"; mkdir -p "$t/rt"; bash -e "$t/step.sh" 2>&1 ); }
+expect_step_err() { if out=$(step "$2" "$3"); then echo "FAIL $1: passed"; fail=$((fail+1)); elif grep -q "$4" <<<"$out"; then echo "ok   $1 ($4)"; pass=$((pass+1)); else echo "FAIL $1: wrong reason: $out"; fail=$((fail+1)); fi; }
+reset; mkdir -p scripts; for f in check-signatures.mjs check-commits.mjs leak-scan.mjs; do cp "$here/scripts/$f" scripts/; done
+git add -A; git -c user.signingkey="$t/good" commit -q -S -m "add checks"; anchor="$(git rev-parse HEAD)"
 echo h > f; git add f; git -c user.signingkey="$t/good" commit -q -S -m next
-if out=$(step push "$withchecks" refs/heads/dev) && grep -q "Trusted base: $withchecks" <<<"$out"; then echo "ok   a push takes its checks from BEFORE"; pass=$((pass+1)); else echo "FAIL a push takes its checks from BEFORE: $out"; fail=$((fail+1)); fi
-expect_step_err "a push with BEFORE zero fails" push 0000000000000000000000000000000000000000 refs/heads/dev "no trusted base"
-expect_step_err "a push whose BEFORE has no checker fails (no fallback)" push "$SIG_BASELINE" refs/heads/dev "has no scripts/"
-expect_step_err "a manual run whose release tag has no checker copy fails" workflow_dispatch "" refs/heads/dev "has no scripts/"
-expect_step_err "a manual run on another branch fails" workflow_dispatch "" refs/heads/other "no trusted base"
+if out=$(step "$anchor" refs/heads/dev) && grep -q "Trusted base: $anchor" <<<"$out"; then echo "ok   the checks come from anchor A"; pass=$((pass+1)); else echo "FAIL the checks come from anchor A: $out"; fail=$((fail+1)); fi
+expect_step_err "a missing anchor A fails" "" refs/heads/dev "no anchor"
+git tag v0.1.99 HEAD
+if out=$(step "" refs/heads/dev); then echo "FAIL a pushed tag on an unverified commit is not used: passed"; fail=$((fail+1)); elif grep -q "no anchor" <<<"$out"; then echo "ok   a pushed tag on an unverified commit is not used (no anchor)"; pass=$((pass+1)); else echo "FAIL a pushed tag on an unverified commit is not used: wrong reason: $out"; fail=$((fail+1)); fi
+git tag -d v0.1.99 >/dev/null
+expect_step_err "an anchor with no checker copy fails (no fallback)" "$SIG_BASELINE" refs/heads/dev "has no scripts/"
+expect_step_err "a run on another branch fails" "$anchor" refs/heads/other "only dev"
 git checkout -q --orphan forced; git -c user.signingkey="$t/good" commit -q -S -m forced; forced="$(git rev-parse HEAD)"; git checkout -q dev
-expect_step_err "a push whose BEFORE is not an ancestor fails (force push)" push "$forced" refs/heads/dev "is not an ancestor"
-if out=$(node "$here/scripts/check-signatures.mjs" "$forced" HEAD 2>&1); then echo "FAIL the checker refuses a BEFORE that is not an ancestor: passed"; fail=$((fail+1)); elif grep -q "is not an ancestor" <<<"$out"; then echo "ok   the checker refuses a BEFORE that is not an ancestor (is not an ancestor)"; pass=$((pass+1)); else echo "FAIL the checker refuses a BEFORE that is not an ancestor: wrong reason: $out"; fail=$((fail+1)); fi
-git branch -q -D forced; git tag -d v0.1.0 >/dev/null
+expect_step_err "an anchor that is not an ancestor fails (force push)" "$forced" refs/heads/dev "is not an ancestor"
+if out=$(node "$here/scripts/check-signatures.mjs" "$forced" HEAD 2>&1); then echo "FAIL the checker refuses a start that is not an ancestor: passed"; fail=$((fail+1)); elif grep -q "is not an ancestor" <<<"$out"; then echo "ok   the checker refuses a start that is not an ancestor (is not an ancestor)"; pass=$((pass+1)); else echo "FAIL the checker refuses a start that is not an ancestor: wrong reason: $out"; fail=$((fail+1)); fi
+git branch -q -D forced
+# A dropped run: an unsigned commit pushed between A and BEFORE whose run never deployed; the next push still fails.
+git reset -q --hard "$anchor"; echo i > f; git add f; git commit -q -m "unsigned, run dropped"
+echo j > f; git add f; git -c user.signingkey="$t/good" commit -q -S -m "BEFORE"; echo k > f; git add f; git -c user.signingkey="$t/good" commit -q -S -m "AFTER"
+git show "$anchor:scripts/check-signatures.mjs" > "$t/a.mjs"
+if out=$(node "$t/a.mjs" "$anchor" HEAD 2>&1); then echo "FAIL an unsigned commit from a dropped run fails: passed"; fail=$((fail+1)); elif grep -q "not signed" <<<"$out"; then echo "ok   an unsigned commit from a dropped run (between A and BEFORE) fails (not signed)"; pass=$((pass+1)); else echo "FAIL an unsigned commit from a dropped run fails: wrong reason: $out"; fail=$((fail+1)); fi
 reset; git checkout -q --orphan old; GIT_AUTHOR_DATE="2001-01-01T00:00:00Z" GIT_COMMITTER_DATE="2001-01-01T00:00:00Z" git -c user.signingkey="$t/good" commit -q -S -m "backdated orphan"; o="$(git rev-parse HEAD)"
 git checkout -q dev; git -c user.signingkey="$t/good" merge -q -S --allow-unrelated-histories -m "merge backdated" "$o" 2>/dev/null
 expect_err "a backdated orphan commit is refused" "orphan commit"

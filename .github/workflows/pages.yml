@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  deployments: read
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -31,25 +32,39 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Take every security check from the trusted base (fails closed)
+      - name: Find anchor A, the commit the last successful github-pages deployment published
+        id: anchor
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        # Read with this run's own token from the deployments record, which a push cannot write.
+        # Tags are not used until a tag ruleset exists. Prints nothing if there is no such deployment.
+        run: |
+          node -e '
+            const h = { Authorization: "Bearer " + process.env.GH_TOKEN, Accept: "application/vnd.github+json" };
+            const api = p => fetch("https://api.github.com/repos/" + process.env.REPO + p, { headers: h }).then(r => { if (!r.ok) throw new Error(p + " " + r.status); return r.json(); });
+            (async () => {
+              for (const d of await api("/deployments?environment=github-pages&per_page=30")) {
+                const st = await api("/deployments/" + d.id + "/statuses?per_page=1");
+                if (st[0] && st[0].state === "success") { console.log("anchor=" + d.sha); return; }
+              }
+            })().catch(e => { console.error(e.message); process.exit(1); });
+          ' >> "$GITHUB_OUTPUT"
+      - name: Take every security check from anchor A (fails closed)
         id: trusted
         env:
-          EVENT: ${{ github.event_name }}
-          BEFORE: ${{ github.event.before }}
+          ANCHOR: ${{ steps.anchor.outputs.anchor }}
           REF: ${{ github.ref }}
-        # The trusted base is the commit before this push; for a manual run on dev, the last release tag.
-        # The signature, trailer and leak checks come only from that commit, never from the pushed tree.
-        # If the base or any of the three is missing, the run stops: there is no other fallback.
+        # A must exist, be an ancestor of the commit being built, and hold all three checks; the checks then judge
+        # every commit in A..HEAD, so commits from runs that never deployed are covered. No other fallback.
         run: |
-          if [ "$EVENT" = push ]; then base="$BEFORE"
-          elif [ "$EVENT" = workflow_dispatch ] && [ "$REF" = refs/heads/dev ]; then base=$(git tag --list "v${VERSION_BASE}.*" | sort -V | tail -1)
-          else base=""; fi
-          if [ -z "$base" ] || echo "$base" | grep -qE '^0+$' || ! git cat-file -e "$base^{commit}" 2>/dev/null; then echo "no trusted base for this run"; exit 1; fi
-          base=$(git rev-parse "$base^{commit}")
-          git merge-base --is-ancestor "$base" "$GITHUB_SHA" || { echo "the trusted base $base is not an ancestor of $GITHUB_SHA"; exit 1; }
+          [ "$REF" = refs/heads/dev ] || { echo "only dev is built here"; exit 1; }
+          if [ -z "$ANCHOR" ] || ! git cat-file -e "$ANCHOR^{commit}" 2>/dev/null; then echo "no anchor: no verified deployment to start from"; exit 1; fi
+          base=$(git rev-parse "$ANCHOR^{commit}")
+          git merge-base --is-ancestor "$base" "$GITHUB_SHA" || { echo "anchor $base is not an ancestor of $GITHUB_SHA"; exit 1; }
           mkdir -p "$RUNNER_TEMP/trusted"
           for f in check-signatures.mjs check-commits.mjs leak-scan.mjs; do
-            git show "$base:scripts/$f" > "$RUNNER_TEMP/trusted/$f" 2>/dev/null || { echo "the trusted base has no scripts/$f"; exit 1; }
+            git show "$base:scripts/$f" > "$RUNNER_TEMP/trusted/$f" 2>/dev/null || { echo "anchor $base has no scripts/$f"; exit 1; }
           done
           echo "Trusted base: $base"
           echo "base=$base" >> "$GITHUB_OUTPUT"
