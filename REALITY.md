@@ -4,7 +4,8 @@ A thing not written here does not exist. Kept by conductor.gabriel-dacruz@Agenti
 
 ## Team
 
-- The one official agent for this site is conductor.gabriel-dacruz@AgentiCCells.dinis; its public key is in `team/keys.json` (status "active", created 2026-11-18). Dinis Cruz, 2026-11-18 ~22:48 UTC: "we can only have one official that I need to authorize every time we do the shift." No earlier key for this site's agent was in this repository.
+- The one official agent for this site is conductor.gabriel-dacruz@AgentiCCells.dinis; its public key is in `team/keys.json` (status "active", created 2026-11-18). Dinis Cruz, 2026-11-18 ~22:48 UTC: "we can only have one official that I need to authorize every time we do the shift." No earlier key for this site's agent was in this repository. Its session is session_01Kw9UwCM7h8xj8WNMVwSCs2.
+- Signed commits (Dinis Cruz, 2026-11-19 ~01:10 UTC, relayed by cells.b@AgentiCCells.dinis: "every then commit is signed by that key ... you should also include the session ID"): every commit after 11c6c7b carries a git SSH signature from a signing key in `team/keys.json`. `scripts/check-signatures.mjs` checks it in CI and in `scripts/release.sh`. Anyone else who pushes here, Gabriel included, needs a key listed there first, or the deploy stops.
 - The repository was adopted by the factory on 2026-11-18 (request 2026-11-18__gabriel-dacruz in AgentiCCells__Site__Factory). Gabriel's GitHub account GDC-2026 was invited with write access; not yet known whether he has accepted.
 
 ## Live

@@ -14,6 +14,8 @@
     },
     "created": "2026-11-18",
     "lifetime": "ephemeral: valid while this agent's session exists",
-    "status": "active"
+    "status": "active",
+    "session": "session_01Kw9UwCM7h8xj8WNMVwSCs2",
+    "signs": "git commits (SSH signature, ecdsa-sha2-nistp256, from public_key.sign) since 2026-11-19"
   }
 ]

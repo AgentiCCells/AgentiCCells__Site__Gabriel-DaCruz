@@ -5,6 +5,8 @@ cd "$(dirname "$0")/.."
 node scripts/build.mjs
 node scripts/validate.mjs
 node scripts/smoke.mjs
+git fetch -q origin dev
+node scripts/check-signatures.mjs origin/dev HEAD
 node scripts/leak-scan.mjs
 for i in 1 2 3 4 5; do
   git fetch -q origin dev

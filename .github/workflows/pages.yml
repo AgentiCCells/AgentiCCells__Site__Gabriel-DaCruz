@@ -36,6 +36,11 @@ jobs:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
         run: node scripts/check-commits.mjs "$BEFORE" "$AFTER"
+      - name: Every pushed commit is signed by a key in team/keys.json
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: node scripts/check-signatures.mjs "$BEFORE" "$AFTER"
       - run: node scripts/build.mjs
         env:
           SITE_VERSION: ${{ steps.version.outputs.version }}
