@@ -41,6 +41,8 @@ jobs:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
         run: node scripts/check-signatures.mjs "$BEFORE" "$AFTER"
+      - name: The signature check refuses what it should, for the right reason
+        run: scripts/test-signatures.sh
       - run: node scripts/build.mjs
         env:
           SITE_VERSION: ${{ steps.version.outputs.version }}

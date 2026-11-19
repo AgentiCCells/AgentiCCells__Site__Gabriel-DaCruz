@@ -9,7 +9,7 @@ import { createPublicKey } from 'node:crypto';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-const BASELINE = '11c6c7b16e8ec68a5b1221b3fd579dc17e3dfe49';
+const BASELINE = process.env.SIG_BASELINE || '11c6c7b16e8ec68a5b1221b3fd579dc17e3dfe49'; // SIG_BASELINE: for scripts/test-signatures.sh only
 const [before, after = 'HEAD'] = process.argv.slice(2);
 const zero = /^0+$/;
 
@@ -45,7 +45,7 @@ const bad = [];
 for (const s of shas) {
   try {
     const signers = signersFor(s);
-    execFileSync('git', ['-c', 'gpg.format=ssh', '-c', `gpg.ssh.allowedSignersFile=${signers}`, 'verify-commit', s], { stdio: 'pipe' });
+    execFileSync('git', ['-c', 'gpg.format=ssh', '-c', 'gpg.ssh.program=ssh-keygen', '-c', `gpg.ssh.allowedSignersFile=${signers}`, 'verify-commit', s], { stdio: 'pipe' });
   } catch (e) { bad.push(`${s.slice(0, 7)}: ${String(e.stderr || e.message).trim().split('\n').pop() || 'not signed'}`); }
 }
 rmSync(dir, { recursive: true, force: true });
