@@ -60,4 +60,28 @@ else echo "FAIL a push that removes the checker, with an unsigned change, fails:
 if out=$(CI=true node "$here/scripts/check-signatures.mjs" "$SIG_BASELINE" HEAD 2>&1); then echo "FAIL the base cannot be overridden under CI: passed"; fail=$((fail+1));
 elif grep -q "not allowed under CI" <<<"$out"; then echo "ok   the base cannot be overridden under CI (not allowed under CI)"; pass=$((pass+1));
 else echo "FAIL the base cannot be overridden under CI: wrong reason: $out"; fail=$((fail+1)); fi
+# The CI step that picks the trusted base, taken from the workflow file and run here.
+python3 - "$here/.github/workflows/pages.yml" > "$t/step.sh" <<'PY'
+import re, sys
+m = re.search(r'id: trusted.*?run: \|\n(.*?)\n      - name', open(sys.argv[1]).read(), re.S)
+print('\n'.join(l[10:] for l in m.group(1).split('\n')))
+PY
+step() { ( export EVENT="$1" BEFORE="$2" REF="$3" GITHUB_SHA="$(git rev-parse HEAD)" RUNNER_TEMP="$t/rt" GITHUB_OUTPUT=/dev/null VERSION_BASE=0.1; rm -rf "$t/rt"; mkdir -p "$t/rt"; bash -e "$t/step.sh" 2>&1 ); }
+expect_step_err() { if out=$(step "$2" "$3" "$4"); then echo "FAIL $1: passed"; fail=$((fail+1)); elif grep -q "$5" <<<"$out"; then echo "ok   $1 ($5)"; pass=$((pass+1)); else echo "FAIL $1: wrong reason: $out"; fail=$((fail+1)); fi; }
+reset; git tag v0.1.0; mkdir -p scripts; for f in check-signatures.mjs check-commits.mjs leak-scan.mjs; do cp "$here/scripts/$f" scripts/; done
+git add -A; git -c user.signingkey="$t/good" commit -q -S -m "add checks"; withchecks="$(git rev-parse HEAD)"
+echo h > f; git add f; git -c user.signingkey="$t/good" commit -q -S -m next
+if out=$(step push "$withchecks" refs/heads/dev) && grep -q "Trusted base: $withchecks" <<<"$out"; then echo "ok   a push takes its checks from BEFORE"; pass=$((pass+1)); else echo "FAIL a push takes its checks from BEFORE: $out"; fail=$((fail+1)); fi
+expect_step_err "a push with BEFORE zero fails" push 0000000000000000000000000000000000000000 refs/heads/dev "no trusted base"
+expect_step_err "a push whose BEFORE has no checker fails (no fallback)" push "$SIG_BASELINE" refs/heads/dev "has no scripts/"
+expect_step_err "a manual run whose release tag has no checker copy fails" workflow_dispatch "" refs/heads/dev "has no scripts/"
+expect_step_err "a manual run on another branch fails" workflow_dispatch "" refs/heads/other "no trusted base"
+git checkout -q --orphan forced; git -c user.signingkey="$t/good" commit -q -S -m forced; forced="$(git rev-parse HEAD)"; git checkout -q dev
+expect_step_err "a push whose BEFORE is not an ancestor fails (force push)" push "$forced" refs/heads/dev "is not an ancestor"
+if out=$(node "$here/scripts/check-signatures.mjs" "$forced" HEAD 2>&1); then echo "FAIL the checker refuses a BEFORE that is not an ancestor: passed"; fail=$((fail+1)); elif grep -q "is not an ancestor" <<<"$out"; then echo "ok   the checker refuses a BEFORE that is not an ancestor (is not an ancestor)"; pass=$((pass+1)); else echo "FAIL the checker refuses a BEFORE that is not an ancestor: wrong reason: $out"; fail=$((fail+1)); fi
+git branch -q -D forced; git tag -d v0.1.0 >/dev/null
+reset; git checkout -q --orphan old; GIT_AUTHOR_DATE="2001-01-01T00:00:00Z" GIT_COMMITTER_DATE="2001-01-01T00:00:00Z" git -c user.signingkey="$t/good" commit -q -S -m "backdated orphan"; o="$(git rev-parse HEAD)"
+git checkout -q dev; git -c user.signingkey="$t/good" merge -q -S --allow-unrelated-histories -m "merge backdated" "$o" 2>/dev/null
+expect_err "a backdated orphan commit is refused" "orphan commit"
+git branch -q -D old
 echo "$pass passed, $fail failed"; [ "$fail" -eq 0 ]
