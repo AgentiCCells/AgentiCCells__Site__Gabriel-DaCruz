@@ -2,6 +2,8 @@
 # Tests scripts/check-signatures.mjs in a throwaway repository, and asserts the reason for every failing case.
 # The test repository pins gpg.ssh.program=ssh-keygen, so it never inherits a global signer.
 set -euo pipefail
+# The test sets SIG_BASELINE, which the checker refuses under CI, so CI markers are cleared for its own runs.
+unset CI GITHUB_ACTIONS
 here="$(cd "$(dirname "$0")/.." && pwd)"
 t="$(mktemp -d)"; trap 'rm -rf "$t"' EXIT
 ssh-keygen -q -t ecdsa -b 256 -N '' -C good -f "$t/good"
@@ -49,4 +51,13 @@ git clone -q --depth 1 "file://$r" "$t/shallow"; git -C "$t/shallow" config gpg.
 if out=$(cd "$t/shallow" && node "$here/scripts/check-signatures.mjs" "$SIG_BASELINE" HEAD 2>&1); then echo "FAIL a shallow checkout is refused: passed"; fail=$((fail+1));
 elif grep -q "shallow checkout" <<<"$out"; then echo "ok   a shallow checkout is refused (shallow checkout)"; pass=$((pass+1));
 else echo "FAIL a shallow checkout is refused: wrong reason: $out"; fail=$((fail+1)); fi
+reset; mkdir -p scripts; cp "$here/scripts/check-signatures.mjs" scripts/; git add -A; git -c user.signingkey="$t/good" commit -q -S -m "add checker"
+trusted="$(git rev-parse HEAD)"; git rm -q scripts/check-signatures.mjs; echo g > f; git add -A; git commit -q -m "remove checker, unsigned"
+git show "$trusted:scripts/check-signatures.mjs" > "$t/trusted.mjs"
+if out=$(node "$t/trusted.mjs" "$trusted" HEAD 2>&1); then echo "FAIL a push that removes the checker, with an unsigned change, fails: passed"; fail=$((fail+1));
+elif grep -q "not signed" <<<"$out"; then echo "ok   a push that removes the checker, with an unsigned change, fails (not signed)"; pass=$((pass+1));
+else echo "FAIL a push that removes the checker, with an unsigned change, fails: wrong reason: $out"; fail=$((fail+1)); fi
+if out=$(CI=true node "$here/scripts/check-signatures.mjs" "$SIG_BASELINE" HEAD 2>&1); then echo "FAIL the base cannot be overridden under CI: passed"; fail=$((fail+1));
+elif grep -q "not allowed under CI" <<<"$out"; then echo "ok   the base cannot be overridden under CI (not allowed under CI)"; pass=$((pass+1));
+else echo "FAIL the base cannot be overridden under CI: wrong reason: $out"; fail=$((fail+1)); fi
 echo "$pass passed, $fail failed"; [ "$fail" -eq 0 ]

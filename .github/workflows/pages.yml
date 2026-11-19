@@ -31,26 +31,36 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Every pushed commit carries an Agent trailer
+      - name: Take every security check from the trusted base (fails closed)
+        id: trusted
         env:
+          EVENT: ${{ github.event_name }}
           BEFORE: ${{ github.event.before }}
-          AFTER: ${{ github.sha }}
-        run: node scripts/check-commits.mjs "$BEFORE" "$AFTER"
-      - name: Every pushed commit is signed by a key in team/keys.json
-        env:
-          BEFORE: ${{ github.event.before }}
-          AFTER: ${{ github.sha }}
-        # The checker comes from the trusted base (the commit before this push, else the last release tag),
-        # never from the pushed tree, so a push cannot weaken the check that judges it.
+          REF: ${{ github.ref }}
+        # The trusted base is the commit before this push; for a manual run on dev, the last release tag.
+        # The signature, trailer and leak checks come only from that commit, never from the pushed tree.
+        # If the base or any of the three is missing, the run stops: there is no other fallback.
         run: |
-          base="$BEFORE"
-          if [ -z "$base" ] || ! git cat-file -e "$base:scripts/check-signatures.mjs" 2>/dev/null; then
-            base=$(for t in $(git tag --list "v${VERSION_BASE}.*" | sort -V -r); do git cat-file -e "$t:scripts/check-signatures.mjs" 2>/dev/null && { echo "$t"; break; }; done)
-          fi
-          [ -n "$base" ] || { echo "no trusted copy of the signature check"; exit 1; }
-          echo "Signature check taken from $base"
-          git show "$base:scripts/check-signatures.mjs" > "$RUNNER_TEMP/check-signatures.mjs"
-          node "$RUNNER_TEMP/check-signatures.mjs" "$BEFORE" "$AFTER"
+          if [ "$EVENT" = push ]; then base="$BEFORE"
+          elif [ "$EVENT" = workflow_dispatch ] && [ "$REF" = refs/heads/dev ]; then base=$(git tag --list "v${VERSION_BASE}.*" | sort -V | tail -1)
+          else base=""; fi
+          if [ -z "$base" ] || echo "$base" | grep -qE '^0+$' || ! git cat-file -e "$base^{commit}" 2>/dev/null; then echo "no trusted base for this run"; exit 1; fi
+          base=$(git rev-parse "$base^{commit}")
+          git merge-base --is-ancestor "$base" "$GITHUB_SHA" || { echo "the trusted base $base is not an ancestor of $GITHUB_SHA"; exit 1; }
+          mkdir -p "$RUNNER_TEMP/trusted"
+          for f in check-signatures.mjs check-commits.mjs leak-scan.mjs; do
+            git show "$base:scripts/$f" > "$RUNNER_TEMP/trusted/$f" 2>/dev/null || { echo "the trusted base has no scripts/$f"; exit 1; }
+          done
+          echo "Trusted base: $base"
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+      - name: Every pushed commit carries an Agent trailer (trusted copy)
+        env:
+          BASE: ${{ steps.trusted.outputs.base }}
+        run: node "$RUNNER_TEMP/trusted/check-commits.mjs" "$BASE" "$GITHUB_SHA"
+      - name: Every pushed commit is signed by a key in its parent's team/keys.json (trusted copy)
+        env:
+          BASE: ${{ steps.trusted.outputs.base }}
+        run: node "$RUNNER_TEMP/trusted/check-signatures.mjs" "$BASE" "$GITHUB_SHA"
       - name: The signature check refuses what it should, for the right reason
         run: scripts/test-signatures.sh
       - run: node scripts/build.mjs
@@ -62,8 +72,8 @@ jobs:
           npm install --no-save --no-package-lock --no-audit --no-fund playwright@1.63.0
           npx playwright install --with-deps chromium
           node scripts/smoke.mjs
-      - name: Leak scan (tracked files and the built site)
-        run: node scripts/leak-scan.mjs
+      - name: Leak scan (tracked files and the built site; trusted copy)
+        run: node "$RUNNER_TEMP/trusted/leak-scan.mjs"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

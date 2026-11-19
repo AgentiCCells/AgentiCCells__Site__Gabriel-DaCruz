@@ -10,7 +10,11 @@ import { createPublicKey } from 'node:crypto';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-const BASELINE = process.env.SIG_BASELINE || '11c6c7b16e8ec68a5b1221b3fd579dc17e3dfe49'; // SIG_BASELINE: for scripts/test-signatures.sh only
+// Commits up to BASELINE are skipped only because they are its ancestors (git merge-base --is-ancestor), never by
+// what a tree holds. SIG_BASELINE overrides it for scripts/test-signatures.sh only, and never under CI.
+const PINNED = '11c6c7b16e8ec68a5b1221b3fd579dc17e3dfe49';
+if (process.env.SIG_BASELINE && (process.env.CI || process.env.GITHUB_ACTIONS)) { console.error('SIG_BASELINE is not allowed under CI'); process.exit(1); }
+const BASELINE = process.env.SIG_BASELINE || PINNED;
 const [before, after = 'HEAD'] = process.argv.slice(2);
 const zero = /^0+$/;
 
