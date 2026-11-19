@@ -1,5 +1,6 @@
-// Every commit after the baseline carries a git SSH signature made by a signing key listed in team/keys.json
-// (status "active" or "superseded"). Rule from Dinis Cruz, 2026-11-19 ~01:10 UTC: every commit is signed by the
+// Every commit after the baseline carries a git SSH signature made by a signing key listed in its FIRST PARENT's
+// team/keys.json (status "active" or "superseded"), never the commit's own, so a commit cannot admit the key that
+// signs it. No commit is exempt by author or committer name. Rule from Dinis Cruz, 2026-11-19 ~01:10 UTC: every commit is signed by the
 // key of the agent that maintains the repository. Commits up to and including BASELINE were made before the rule.
 // Usage: node scripts/check-signatures.mjs [before] [after]   (no arguments: every commit after the baseline on HEAD)
 import { execFileSync } from 'node:child_process';
@@ -22,11 +23,18 @@ function sshKey(pem) {
   return `ecdsa-sha2-nistp256 ${blob.toString('base64')}`;
 }
 
-const keys = JSON.parse(readFileSync('team/keys.json', 'utf8')).filter(k => ['active', 'superseded'].includes(k.status));
-if (!keys.length) { console.error('team/keys.json lists no active or superseded key'); process.exit(1); }
 const dir = mkdtempSync(join(tmpdir(), 'signers-'));
-const signers = join(dir, 'allowed_signers');
-writeFileSync(signers, keys.map(k => `${k.label} namespaces="git" ${sshKey(k.public_key.sign)}`).join('\n') + '\n');
+// The allowed signers file for a commit, built from its first parent's team/keys.json.
+function signersFor(sha) {
+  let keys;
+  try { keys = JSON.parse(execFileSync('git', ['show', `${sha}^1:team/keys.json`], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] })); }
+  catch { throw new Error('its parent has no readable team/keys.json'); }
+  keys = keys.filter(k => ['active', 'superseded'].includes(k.status));
+  if (!keys.length) throw new Error('its parent lists no active or superseded key');
+  const f = join(dir, `${sha}.signers`);
+  writeFileSync(f, keys.map(k => `${k.label} namespaces="git" ${sshKey(k.public_key.sign)}`).join('\n') + '\n');
+  return f;
+}
 
 const isAncestor = (a, b) => { try { execFileSync('git', ['merge-base', '--is-ancestor', a, b]); return true; } catch { return false; } };
 const range = !before || zero.test(before) ? [after, `^${BASELINE}`] : [`${before}..${after}`, `^${BASELINE}`];
@@ -36,9 +44,10 @@ shas = shas.filter(s => s !== BASELINE && !isAncestor(s, BASELINE));
 const bad = [];
 for (const s of shas) {
   try {
+    const signers = signersFor(s);
     execFileSync('git', ['-c', 'gpg.format=ssh', '-c', `gpg.ssh.allowedSignersFile=${signers}`, 'verify-commit', s], { stdio: 'pipe' });
   } catch (e) { bad.push(`${s.slice(0, 7)}: ${String(e.stderr || e.message).trim().split('\n').pop() || 'not signed'}`); }
 }
 rmSync(dir, { recursive: true, force: true });
 if (bad.length) { console.error('Commits not signed by a key in team/keys.json:\n' + bad.join('\n')); process.exit(1); }
-console.log(`OK (${shas.length} signed commit(s), ${keys.length} key(s))`);
+console.log(`OK (${shas.length} signed commit(s), each by a key in its parent's team/keys.json)`);
